@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./FONT/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="app__information">
+            <div class="info-group">
+                <p class="info-title">PHÒNG HÀNH CHÍNH TỔNG HỢP</p>
+                <p class="info-content info-address"><i class="fa-solid fa-location-dot"></i>Địa chỉ: Nhà C1-114, 215,
+                    217</p>
+                <p class="info-content info-phone"><i class="fa-solid fa-phone"></i>Điện thoại: 0234.
+                    8696099/0234.8692222</p>
+                <p class="info-content info-email"><i class="fa-solid fa-envelope"></i>Email: hcth@hust.edu.vn</p>
+            </div>
+            <div class="info-group">
+                <p class="info-title">PHÒNG HỢP TÁC ĐỐI NGOẠI</p>
+                <p class="info-content info-address"><i class="fa-solid fa-location-dot"></i>Địa chỉ: Nhà C1-114, 215,
+                    217</p>
+                <p class="info-content info-phone"><i class="fa-solid fa-phone"></i>Điện thoại: 0234.
+                    8696099/0234.8692222</p>
+                <p class="info-content info-email"><i class="fa-solid fa-envelope"></i>Email: hcth@hust.edu.vn</p>
+            </div>
+            <div class="info-group">
+                <p class="info-title">PHÒNG TRUYỀN THÔNG & QUẢN TRỊ THƯƠNG HIỆU</p>
+                <p class="info-content info-address"><i class="fa-solid fa-location-dot"></i>Địa chỉ: Nhà C1-114, 215,
+                    217</p>
+                <p class="info-content info-phone"><i class="fa-solid fa-phone"></i>Điện thoại: 0234.
+                    8696099/0234.8692222</p>
+                <p class="info-content info-email"><i class="fa-solid fa-envelope"></i>Email: hcth@hust.edu.vn</p>
+            </div>
+        </div>
+        <div class="app__form">
+            <p class="form-title">Gửi phản hồi</p>
+            <form action="" class="form">
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-folder-open"></i>
+                        <select name="" id="">
+                            <option value="">Chủ đề bạn quan tâm</option>
+                            <option value="1">Học tập</option>
+                            <option value="2">Cơ sở vật chất</option>
+                        </select>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-file-lines"></i>
+                        <input placeholder="Tiêu đề" type="text" name="" id="Title">
+                        <span style="color: red;">*</span>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                        <input placeholder="Họ và tên" type="text" name="" id="Name">
+                        <span style="color: red;">*</span>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input placeholder="Email" type="text" name="" id="Email">
+                        <span style="color: red;">*</span>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <input placeholder="Điện thoại" type="text" name="" id="">
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <input placeholder="Địa chỉ" type="text" name="" id="">
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class=" form-group-content">
+                    <div class="">
+                        <textarea placeholder="Nội dung" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+
+                <div class="form-not-Robot">
+                    <input type="checkbox" id="NotRobot">
+                    <label for="">Tôi không phải là người máy</label>
+                    <div>
+                        <img src="./IMG/RecaptchaLogo.svg.png" alt="">
+                        <div class="dk">
+                            <a href="">Bảo mật</a>
+                            <a href="">Điều khoản</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button id="reEnter">Nhập lại</button>
+                    <button id="submit">Gửi đi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script src="./JS/login.js"></script>
+</body>
+
+</html>

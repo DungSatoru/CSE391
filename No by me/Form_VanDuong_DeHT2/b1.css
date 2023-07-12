@@ -1,0 +1,74 @@
+.container {}
+
+a {
+    font-size: 12px;
+}
+.container form {
+    height: 494;
+    width: 500px;
+    background: linear-gradient(to bottom, white, gray);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.container form h1 {}
+.container form .p1 {}
+.container form .box {
+    display: flex;
+    justify-content: space-between;
+}
+.container form input {
+    margin: 8px 0;
+}
+
+.ho {
+    width: 250px;
+}
+
+.name {
+    width: 220px;
+}
+
+.box2 {
+    display: flex;
+
+}
+
+.box2 .box2_1 {
+    width: 44%;
+}
+
+.box2 .box2_2 a {
+    float: left;
+    text-decoration: none;
+}
+
+.box3 {
+    margin: 10px 0;
+}
+
+.p2 {
+    font-size: 12px;
+}
+
+.p2 a {
+    text-decoration: none;
+}
+
+.dangky {
+    width: 135px;
+    background-color: green;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#check_ten {
+    font-size: 14px;
+    color: red;
+}
+
+#check_email {
+    font-size: 14px;
+    color: red;
+}

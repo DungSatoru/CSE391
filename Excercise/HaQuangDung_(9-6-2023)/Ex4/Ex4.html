@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập số 4</title>
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+
+<body>
+    <form action="" class="app">
+        <div class="container">
+            <h2><b>ĐĂNG KÝ THÀNH VIÊN</b></h2>
+            <div class="account">
+                <h3>THÔNG TIN TÀI KHOẢN</h3>
+
+                <div class="form-group">
+                    <span>Username:</span>
+                    <input id="name" type="text">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Password:</span>
+                    <input id="password" type="text">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Nhập lại password:</span>
+                    <input id="repassword" type="text">
+                    <div class="form-message"></div>
+                </div>
+
+            </div>
+
+            <div class="personal">
+                <h3>THÔNG TIN CÁ NHÂN</h3>
+
+                <div class="form-group">
+                    <span>Họ và tên:</span>
+                    <input id="fullname" type="text">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Giới tính:</span>
+                    <select name="Sex" id="Sex">
+                        <option value="Male">Nam</option>
+                        <option value="Female">Nữ</option>
+                        <option value="Other">Khác</option>
+                    </select>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span id="dia_chi">Địa chỉ:</span>
+                    <textarea name="" id="" cols="15" rows="5"></textarea>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Ngày sinh:</span>
+                    <input id="date" type="date">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Email:</span>
+                    <input id="email" type="text">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span id="hon_nhan">Tình trạng hôn nhân:</span>
+                    <div class="check_box">
+                        <input type="radio" name="hon_nhan"> độc thân
+                        <input type="radio" name="hon_nhan"> đã đính hôn
+                        <input type="radio" name="hon_nhan"> ly dị
+                        <input type="radio" name="hon_nhan"> quá phụ
+                        <br>
+                    </div>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="submit" type="submit" value="Gửi đi">
+                    <input id="reset" type="reset" name="" id="" value="Nhập lại">
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="Ex4.js"></script>
+</body>
+
+</html>

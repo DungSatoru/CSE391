@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="./Ex5.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="heading">ĐƠN ĐĂNG KÝ TIÊM VẮC XIN COVID-19</h1>
+        <p class="desc">YÊU CẦU ĐĂNG KÝ RỒI, VUI LÒNG KHÔNG ĐĂNG KÝ LẠI <br>
+            TIẾP NHẬN ĐĂNG KÝ CHO ĐẾN 14 GIỜ NGÀY 4/7/2021</p>
+        <form action="" id="form-1">
+            <div class="form-group">
+                <h5 class="title">Tên đơn vị <span>*</span></h5>
+                <p>Ghi đúng tên doanh nghiệp/Hộ kinh doanh theo giấy chứng nhận đăng ký kinh doanh</p>
+                <input class="input-text form-control ipTenDonVi" type="text" name="" id="">
+                <span class="form-message"></span>
+                <p class="tooltip"></p>
+
+            </div>
+            <div class="form-group">
+                <h5 class="title ">Mã số thuế <span>*</span></h5>
+                <input class="input-text  form-control ipMST" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title ">Địa chỉ chi tiết(số nhà, đường) <span>*</span></h5>
+                <input class="input-text  form-control ipDiaChi" type="text" name="" id="">
+            </div>
+            <div class="nganhNghe">
+                <h5 class="title phuong">Ngành nghề <span>*</span></h5>
+                <p>Chọn ngành nghề đơn vị mình đang SXKD</p>
+                <input type="radio" name="ngheNgiep"><label>1. Cung cấp nước</label><br>
+                <input type="radio" name="ngheNgiep"><label>2. Cung cấp thuốc, dịch vụ cho bệnh viện</label><br>
+                <input type="radio" name="ngheNgiep"><label>3. Bưu chính viễn thông (nhà mạng, truyền hình cap,
+                    intermet)</label><br>
+                <input type="radio" name="ngheNgiep"><label>4. Môi trường đô thị: các công ty, HTX thu gom rác dân
+                    lập</label><br>
+                <input type="radio" name="ngheNgiep"><label>5. Doanh nghiệp bình ổn giá</label><br>
+                <input type="radio" name="ngheNgiep"><label>6. Doanh nghiệp xáng dầu</label><br>
+                <input type="radio" name="ngheNgiep"><label>7. Dịch vụ ngân hàng, tài chính</label><br>
+                <input type="radio" name="ngheNgiep"><label>8. Vận tải, logistic</label><br>
+                <input type="radio" name="ngheNgiep"><label>9. Doanh nghiệp xúc tiến thương mại</label><br>
+                <input type="radio" name="ngheNgiep"><label>10. Doanh nghiệp công nghiệp (Cơ khí, dệt may, da giày, chế
+                    biến lương thực, thực phẩm, nhựa, hóa chất...)</label><br>
+                <input type="radio" name="ngheNgiep"><label>11. Du lịch</label><br>
+                <input type="radio" name="ngheNgiep"><label>12. Doanh nghiệp, cơ sở kinh doanh lương thực, thực phẩm,
+                    nhu yếu phẩm</label><br>
+                <input type="radio" name="ngheNgiep"><label>13. Các cơ sở sản xuất (bánh mì, mì, bột,...)</label><br>
+                <input type="radio" name="ngheNgiep"><label>14. Doanh nghiệp sản xuất phần mềm</label><br>
+                <input type="radio" name="ngheNgiep"><label>15. Các doanh nghiệp, cơ sở kinh doanh, dịch vụ khác: thương
+                    mại, ăn uống, chăm sóc sắc đẹp,...</label><br>
+            </div>
+            <div class="Phuong">
+                <h5 class="title">Phường<span>*</span></h5>
+                <input type="radio" name="phuong"><label>Phường 1</label>
+                <input type="radio" name="phuong"><label>Phường 2</label>
+                <input type="radio" name="phuong"><label>Phường 3</label>
+                <input type="radio" name="phuong"><label>Phường 4</label><br>
+                <input type="radio" name="phuong"><label>Phường 5</label>
+                <input type="radio" name="phuong"><label>Phường 6</label>
+                <input type="radio" name="phuong"><label>Phường 7</label>
+                <input type="radio" name="phuong"><label>Phường 8</label><br>
+                <input type="radio" name="phuong"><label>Phường 9</label>
+                <input type="radio" name="phuong"><label>Phường 10</label>
+                <input type="radio" name="phuong"><label>Phường 11</label>
+                <input type="radio" name="phuong"><label>Phường 12</label><br>
+                <input type="radio" name="phuong"><label>Phường 13</label>
+                <input type="radio" name="phuong"><label>Phường 14</label>
+                <input type="radio" name="phuong"><label>Phường 15</label>
+                <input type="radio" name="phuong"><label>Phường 16</label><br>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Quận</h5>
+                <input class="input-text  form-control ipQuan" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Tổng số người lao động tại đơn vị: <span>*</span></h5>
+                <input class="input-text  form-control ipSumNgLD" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Số người đã tiên vắc xin COVID-19:<span>*</span></h5>
+                <p>Cho đến thời điểm đăng ký này</p>
+                <input class="input-text  form-control ipSumDaTiemVX" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Số người đồng thuận tiêm vắc xin COVID-19: <span>*</span></h5>
+                <input class="input-text  form-control ipSumOK_TiemVX" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Ghi chú (nếu có)</h5>
+                <input class="input-text  form-control ipNote" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Họ tên người đại diện, liên hệ</h5>
+                <input class="input-text  form-control ipName" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="title">Số điện thoại <span>*</span></h5>
+                <input class="input-text  form-control ipSDT" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <h5 class="email">Email <span>*</span></h5>
+                <input class="input-text  form-control ipEmail" type="text" name="" id="">
+                <span class="form-message"></span>
+            </div>
+            <div class="Thanks">
+                <h5 class="title">Cảm ơn đã đăng ký thông tin và hợp tác này</h5>
+                <h6>PHÒNG KINH TẾ/UBND QUẬN 11</h6>
+            </div>
+            <hr>
+            <div>
+                <input type="checkbox"><label for="">Send me a copy of my responses</label>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+            <a href="">Privacy Notice</a>
+            <span>|</span>
+            <a href="">Report Abuse</a>
+        </form>
+
+    </div>
+
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="./validator.js"></script>
+    <script>
+        // Mong muốn của chúng ta khi sử dụng thư viện này trong tương lai
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('.ipTenDonVi', 'Vui lòng nhập tên đơn vị'),
+                Validator.isRequired('.ipMST', 'Vui lòng nhập Mã số thuế'),
+                Validator.isRequired('.ipSumNgLD'),
+                Validator.isRequired('.ipSumDaTiemVX'),
+                Validator.isRequired('.ipSumOK_TiemVX'),
+                Validator.isRequired('.ipSDT', 'Vui lòng nhập số điện thoại'),
+                Validator.isRequired('.ipEmail', 'Vui lòng nhập email'),
+            ]
+        })
+    </script>
+
+</body>
+
+</html>

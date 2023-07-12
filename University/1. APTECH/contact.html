@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptech - Liên hệ</title>
+
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+
+    <style>
+        .Check_No-robot {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            min-width: 60%;
+            max-width: 100%;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="Lien_he">
+                        <h1 style="color: brown;" class="Title">Liên hệ</h1>
+                        <p><i class="fa-solid fa-location-dot Information-icon"></i> Địa chỉ: Tầng 1, Tòa C5, Đại học
+                            Thủy
+                            lợi, 175 Tây Sơn, Đống Đa, Hà Nội</p>
+                        <p><i class="fa-solid fa-mobile-retro"></i> Tel: 0234 563 7511</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 0382 020 858</p>
+                        <p><i class="fa-solid fa-envelope-open"></i> Email: Info@aptech.vn</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <form action="" class="w-100">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="Name">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" id="Email">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" placeholder="Số điện thoại" id="Phone">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea style="height: 150px;" name="" class="form-control" id="Content" cols="30"
+                                rows="10" id="Note"></textarea>
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="Check_No-robot  py-1 px-3">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8 p-0">
+                                    <div class="content1 d-flex gap-3 ps-3">
+                                        <input style="transform: scale(1.6);" type="checkbox" name="" id="NotRobot">
+                                        <span>Tôi không phải là người máy</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 p-0">
+                                    <div class="content2 d-flex align-items-center flex-column">
+                                        <img style="width: 30px" src="../21. HLU/IMG/logo_48.png" alt="">
+                                        <span>reCAPTCHA</span>
+                                        <a style="font-size: 10px;" class="text-decoration-none" href="#">Bảo mật-Điều
+                                            khoản</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="w-100 mt-3 rounded-1 border-0 py-1 bg-danger text-white fw-bold"
+                            id="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <!-- <script src="./JS/contact.js"></script> -->
+    <script>
+        function check(ID, Regex, message = '') {
+            if ($(ID).val() === "") {
+                $(ID).next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (Regex !== '0') {
+                if (!Regex.test($(ID).val())) {
+                    $(ID).next('.form-message').text(message).show();
+                    return false;
+                }
+            }
+            $(ID).next(".form-message").hide();
+            return true;
+        }
+
+        function reset() {
+            $('#Name').val('');
+            $('#Email').val('');
+            $('#Content').val('');
+            $(".form-message").hide();
+
+        }
+
+        $(document).ready(function () {
+            $('#Name').on('input', () => { check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ') })
+            $('#Email').on('input', () => { check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!\nExample: abc@gmail.com') })
+            $('#Phone').on('input', () => { check('#Phone', /^0[1-9]\d{8,10}$/, 'Số điện thoại không hợp lệ') })
+            $('#Content').on('input', () => { check('#Content', '0', '') })
+
+
+            $('#submit').click(function (e) {
+                e.preventDefault();
+                const isName = check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ');
+                const isEmail = check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!');
+                const isPhone = check('#Phone', /^0[1-9]\d{8,10}$/, 'Số điện thoại không hợp lệ');
+                const isContent = check('#Content', '0', '');
+                const isNotRobot = $('#NotRobot').is(':checked');
+
+                if (isName && isEmail && isContent && isNotRobot) {
+                    reset();
+                    alert('Bạn đã đăng ký thành công!')
+                }
+            })
+        })
+    </script>
+</body>
+
+
+</html>

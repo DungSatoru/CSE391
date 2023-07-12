@@ -1,0 +1,115 @@
+#header {
+	background-color: #8c0e24;
+	padding-block: 12px;
+}
+.header__left {
+	padding-left: 74px;
+}
+
+.header__list li {
+	display: inline-block;
+	position: relative;
+}
+
+.header__list li::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border-right: 1px solid #fff;
+}
+.header__list li a {
+	display: inline-block;
+	padding: 0 12px;
+}
+
+.header__list li:hover {
+	opacity: 0.8;
+}
+
+.header__input-wrapped {
+	background-color: #fff;
+}
+.header__input {
+	outline: none;
+	border: none;
+	flex: 1;
+	width: 400px;
+}
+
+.header__input-wrapped i {
+	color: #8c0e24;
+}
+
+.header__vn {
+	border-radius: 100%;
+	width: 23px;
+	height: 23px;
+	object-fit: cover;
+}
+
+.header__link {
+	color: yellow;
+}
+
+.header__link:hover {
+	opacity: 0.8;
+}
+#Brand_Nav.fixed {
+	position: fixed;
+	top: 0 !important;
+	transform: height 0.3s ease;
+	padding: 20px 0;
+}
+#Brand_Nav.fixed .brand__image {
+	top: -10px;
+	transform: scale(1.2);
+}
+#Brand_Nav {
+	background-color: rgba(0, 19, 70, 0.567);
+	position: fixed;
+	top: 50px;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
+	transition: top 0.2s linear;
+}
+.brand__name {
+	margin-left: 84px;
+}
+.brand__link {
+	position: relative;
+}
+.brand__image {
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	transition: transform 0.2s ease-in;
+}
+.slider__list li a {
+	font-size: 12px;
+	position: relative;
+}
+.slider__list li a::after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1px;
+	height: 3px;
+	transition: all 0.2s linear;
+	background-color: transparent;
+}
+
+.slider__list li:hover a::after {
+	display: block;
+	width: 66%;
+	background-color: #fff;
+}
+
+#slider {
+	background: url("../img/slider.jpg") no-repeat center / contain;
+	height: 566px;
+}

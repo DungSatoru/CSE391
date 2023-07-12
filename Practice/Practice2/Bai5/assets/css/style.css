@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container{
+    margin: 95px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.container .animation{
+    width: 380px;
+    height: 582px;
+    margin-right: 32px;
+    position: relative;
+  
+}
+.animation .frame img{
+    width: 280px;
+    height: auto;
+    position: absolute;
+}
+
+.phone1 .frame img{
+    position: absolute;
+    right: 0;
+    
+    z-index: 2;
+    background-image: url(/assets/img/screenshot1.png);
+    background-size: 250px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 44px;
+    border: 20px;
+    animation: transfer 4s infinite linear alternate-reverse ;
+}
+.phone2 .frame img{
+    position: absolute;
+    left: 0;
+    top: -16px;
+    z-index: 1;
+    background-image: url(/assets/img/minh-hien.jpg);
+    background-size: 250px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 44px;
+    border: 20px;
+    
+}
+@keyframes transfer {
+    
+    33.333%{
+        position: absolute;
+        right: 0;
+        
+        z-index: 2;
+        background-image: url(/assets/img/screenshot2.png);
+        background-size: 250px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 44px;
+        border: 20px;
+    }
+    66.333%{
+        position: absolute;
+        right: 0;
+        
+        z-index: 2;
+        background-image: url(/assets/img/screenshot3.png);
+        background-size: 250px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 44px;
+        border: 20px;
+    }
+    100%{
+        position: absolute;
+        right: 0;
+        
+        z-index: 2;
+        background-image: url(/assets/img/screenshot4.png);
+        background-size: 250px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 44px;
+        border: 20px;
+    }
+    
+}
+
+
+
+
+
+/* .animation .frame img{
+    width: 280px;
+    height: auto;
+    position: absolute;
+}
+.phone1 .frame img{
+    right: 0;
+    z-index: 3;
+}
+.phone1 .screen img{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    right: 16px;
+    top: 18px;
+    height: auto;
+}
+.phone2 .frame img{
+    z-index: 1;
+    top: -15px;
+}
+.phone2 .screen img{
+    position: absolute;
+    left: 17px;
+    height: auto;
+} */
+.content{
+    width: 350px;
+    height: 727px;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center;
+    justify-content: center; */
+}
+.content .text-heading{
+    background-image: url('/assets/img/íntagram.png');
+    background-position: 0px -52px;
+    background-size: auto;
+    width: 175px;
+    height: 51px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 48px 0;
+}
+.content .form-login{
+    border: 1px solid #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center   ;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.form-login input{
+    background-color: #FAFAFA;
+    margin-bottom: 8px;
+    width: 268px;
+    height: 38px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+.form-login input:focus-visible{
+    outline: 1px solid #A8A8A8;
+}
+.form-login button{
+    background-color: #4CB5F9;
+    width: 268px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 100%;
+    color: #fff;
+    margin: 8px 0;
+    font-weight: 600;
+
+}
+.form-login .line-or{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    
+}
+.line-or .or{
+    align-items: center;
+    font-size: 16px;
+    color: #737373;
+    margin: 0 18px;
+}
+.line-or .line{
+    width: 106px;
+    height: 1px ;
+    background-color: #DBDBDB;
+    flex-shrink: 1;
+    /* co giãn các phần tử trong thẻ sử dụng flexbox */
+    
+}
+.line-or .lỉne-left{
+    top: 12px;
+    position: relative;
+}
+.line-or .line-right{
+    top: 12px;
+    position: relative;
+
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+.form-login .login-with-fb{
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+    margin: 8px 0;
+}
+.form-login .login-with-fb i{
+    font-size: 16px;
+}
+.form-login .fogot-pw{
+    color: #00379B;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.content .signup{
+    border: 1px solid #DBDBDB;
+    height: 62px;
+    display: flex;
+    line-height: 62px;
+    justify-content: center;
+    
+    font-size: 14px;
+}
+.signup >p>a{
+    color: #0096F6;
+    font-weight: 500;
+}
+.content .app{
+    text-align: center;
+}
+.content .app p{
+    margin: 12px 0;
+    font-size: 14px;
+}
+.content .getapp{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+
+}
+.getapp .appstore,.getapp .googleplay{
+    height: 32px;
+}
+
+.getapp  img{
+    display: block;
+    height: 100%;
+    width:  auto;
+    margin: 4px 5px;
+}

@@ -1,0 +1,45 @@
+html {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#main {
+	background-color: #e9ecef;
+	height: 100vh;
+}
+.content {
+	width: 360px;
+	margin: 100px auto 0;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-top: 3px solid #007bff;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content__top {
+	background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.content__top-heading {
+	font-size: 36px;
+}
+
+
+.form__btn {
+	box-shadow: 0 -1px 0 rgb(0 0 0 / 4%), 0 1px 1px rgb(0 0 0 / 25%);
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.form__btn:hover {
+	background-color: #007bff !important;
+	color: #fff !important;
+}
+
+.form__image {
+	width: 16px;
+}
+
+.form__text {
+	flex: 1;
+}

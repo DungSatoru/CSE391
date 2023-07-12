@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "Open Sans", "Robot", sans-serif;
+}
+body {
+    background-color: #dde3ec;
+}
+.app {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+#Content {
+    margin: auto;
+    max-width: 800px;
+}
+.Left {
+    background: linear-gradient(to right, #67d7f5, #86f7cc);
+}
+.Left img {
+    width: 75%;
+}
+.Right {
+    padding: 40px 40px 0;
+    background-color: #fff;
+    min-height: 500px;
+}
+.form-group input {
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.form-group input:focus {
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease-in;
+}
+.Right__info p {
+    font-size: 14px;
+}
+button {
+    font-size: 12px;
+}

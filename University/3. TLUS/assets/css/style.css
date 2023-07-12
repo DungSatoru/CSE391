@@ -1,0 +1,101 @@
+*,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-color: #2a3c95;
+	--secondary-color: #7c88bb;
+}
+
+.text-primary-color {
+	color: #2a3c95 !important;
+}
+
+.text-secondary-color {
+	color: #7c88bb !important;
+}
+
+.header__Top-oldVersion,
+.header__Top-item a {
+	font-weight: bold;
+}
+
+.header__Bottom-brand img {
+	height: 70px;
+}
+
+#Nav {
+	background-color: var(--primary-color);
+}
+
+.Nav__list a {
+	font-size: 14px;
+	color: #ffffffe4;
+}
+
+.Nav__item {
+	padding: 12px 10.8px;
+}
+
+.Nav__item:hover {
+	background-color: #ec2227;
+}
+
+.Input-group {
+	background-color: var(--secondary-color);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.Input-group input {
+	width: 160px;
+	padding: 2px 0;
+
+}
+
+.Input-group input::placeholder {
+	padding-left: 16px;
+	color: #fff;
+}
+
+.Input-group i {
+	color: #fff;
+	margin-left: 10px;
+}
+
+#Slider {
+	background: url(../img/bgr-slider.jpg);
+	height: 336px;
+}
+
+.Slider__img {
+	width: 100%;
+	height: 336px;
+}
+.Menu__item {
+	display: block;
+	text-align: center;
+	padding: 20px;
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.Menu__item img {
+	width: 50px;
+}
+.Menu__item p {
+	color: var(--primary-color);
+	margin-top: 3px;
+}
+.Content__Title {
+	margin-top: 30px;
+	color: var(--primary-color);
+}
+.Content__Line {
+	width: 100px;
+	height: 5px;
+	background-color: #ec2227;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b1.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Welcome to Hoa canh tui ne</h1>
+        <div class="container">
+            <form id="form">
+                <h1 class="form_title">ĐĂNG KÝ MUA HOA</h1>
+                <p class="form_content">Quý độc giả hãy điền đầy đủ các thông tin theo yêu cầu để nhận được sản phẩm hoa
+                    cây cảnh yêu thích nhất</p>
+                <div class="form-group">
+                    <span>Họ tên bạn (<label>*</label>):</span>
+                    <input type="text" name="" class="ip__required" id="Name">
+                    <div class="form-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <span>Địa chỉ (<label>*</label>):</span>
+                    <input type="text" name="" class="ip__required" id="Address">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Điện thoại (<label>*</label>):</span>
+                    <input type="text" name="" class="ip__required" id="Phone">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Email (<label>*</label>):</span>
+                    <input type="text" name="" class="ip__required" id="Email">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Loại hoa:</span>
+                    <select name="" id="FlowerType">
+                        <option value="1">Hoa hồng</option>
+                        <option value="2">Hoa ly</option>
+                        <option value="3">Hoa cải</option>
+                    </select>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Màu:</span>
+                    <select name="" id="Color">
+                        <option value="1">Đỏ</option>
+                        <option value="2">Xanh</option>
+                        <option value="3">Tím</option>
+                    </select>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Số lượng (<label>*</label>):</span>
+                    <input type="text" name="" class="ip__required" id="Quantity">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Đơn vị tính:</span>
+                    <label for=""><input type="radio" name="Unit">Nhánh</label>
+                    <label for=""><input type="radio" name="Unit">Bó</label>
+                    <label for=""><input type="radio" name="Unit">Chậu</label>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Thanh toán:</span>
+                    <label for=""><input type="radio" name="Pay">Tiền mặt</label>
+                    <label for=""><input type="radio" name="Pay">Chuyển khoản</label>
+                    <label for=""><input type="radio" name="Pay">Master card</label>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Yêu cầu:</span>
+                    <textarea name="" id="required" cols="30" rows="10"></textarea>
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <button>Đăng ký</button>
+                    <button>Nhập lại</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <p class="copyRight">Bản quyền thuộc công ty Hoa cảnh Tui nè, Q12, Tp. Hồ Chí Minh</p>
+
+    <script src="jQuery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+:root {
+	--primary-color: #0065ca;
+	--secondary-color: #ed1c24;
+}
+.nav__wrapped {
+	background-color: var(--primary-color);
+}
+
+.nav__list li:first-child a {
+	background: var(--secondary-color);
+	font-weight: bold !important;
+}
+
+.nav__list li:hover a {
+	background-color: var(--secondary-color);
+}
+
+.nav__list li a {
+	display: inline-block;
+	padding: 8px 12px;
+}
+
+#article {
+	height: 420px;
+}
+
+.article__left {
+	position: relative;
+}
+
+.article__left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.article__left-wrapped {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 101, 202, 0.75);
+	padding: 32px 16px;
+	font-size: 15px;
+	color: #fff;
+}
+
+.article__left-link {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	background-color: transparent;
+}
+.active {
+	background-color: #fff;
+}
+.article__right-top {
+	--gap-distance: 12px;
+	gap: var(--gap-distance);
+}
+.article__item {
+	width: calc(33.333% - var(--gap-distance));
+	color: var(--primary-color);
+}
+
+.article__item:hover {
+	color: var(--secondary-color);
+}
+.article__right-img {
+	height: 60px;
+}
+
+.article__bottom-list {
+	border-bottom: 1px solid var(--primary-color);
+}
+.article__bottom-list li {
+	padding: 8px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border: 1px solid var(--primary-color);
+}
+
+.article__bottom-list li a {
+	color: var(--primary-color);
+}
+
+.active,
+.active a {
+	background-color: var(--primary-color) !important;
+	color: #fff !important;
+}
+
+.article__bottom-list li:hover {
+	background-color: #ddd;
+}
+.article__bottom-list li:hover a,
+.article__news-title:hover {
+	color: var(--primary-color) !important;
+}
+
+.article__news-title:hover::before {
+	background-color: var(--primary-color);
+}
+
+.article__news-title {
+	position: relative;
+	padding-left: 12px;
+}
+
+.article__news-title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 11px;
+	width: 4px;
+	height: 4px;
+	background-color: #ddd;
+}
+
+.article__bottom {
+	overflow: hidden;
+}
+
+.article__news-wrapped {
+	border: 1px solid #ccc;
+	padding: 12px;
+	height: 180px;
+	overflow-y: auto;
+}

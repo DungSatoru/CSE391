@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__top img {
+    width: 100%;
+}
+
+.menu__list {
+    background-color: #001E54;
+    /* height: 50px; */
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.menu__list a {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.menu__list li:hover {
+    background-color: #012f83;
+}
+
+.slider__left img {
+    object-fit: cover;
+}
+
+.slider__right img {
+    object-fit: cover;
+}

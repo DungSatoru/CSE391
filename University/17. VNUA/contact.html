@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container g-0">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 g-0">
+                    <div class="Info p-4">
+                        <p class="text-uppercase">Thông tin liên hệ</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <i class="fa-solid fa-globe"></i>
+                                tuyensinh.vnua.edu.vn
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <i class="fa-solid fa-envelope"></i>
+                                tuyensinh@vnua.edu.vn
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <i class="fa-solid fa-blender-phone"></i>
+                                024.6261.7578 / 025.6261.7520
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                0961.926.639 / 0961.926.939
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 g-0">
+                    <form action="" class="p-4">
+                        <div class="form-group">
+                            <p>Họ và tên</p>
+                            <input id="Name" type="text" placeholder="Họ và tên">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <input id="Email" type="text" placeholder="Email">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group">
+                            <p>Nội dung</p>
+                            <textarea id="Content" type="text" placeholder=""></textarea>
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <button id="Submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script>
+        function check(ID, Regex, message = '') {
+            if ($(ID).val() === "") {
+                $(ID).next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (Regex !== '0') {
+                if (!Regex.test($(ID).val())) {
+                    $(ID).next('.form-message').text(message).show();
+                    return false;
+                }
+            }
+            $(ID).next(".form-message").hide();
+            return true;
+        }
+
+        $(document).ready(function () {
+            $('#Name').on('input', () => { $('#Name').next(".form-message").hide(); });
+            $('#Email').on('input', () => { $('#Email').next(".form-message").hide(); });
+            $('#Content').on('input', () => { $('#Content').next(".form-message").hide(); });
+
+            $('#Name').on('blur', () => { check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ') })
+            $('#Email').on('blur', () => { check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!\nExample: abc@gmail.com') })
+            $('#Content').on('blur', () => { check('#Content', '0', '') })
+
+
+            $('#Submit').click(function (e) {
+                e.preventDefault();
+                const isName = check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ');
+                const isEmail = check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!');
+                const isContent = check('#Content', '0', '');
+
+                if (isName && isEmail && isContent) {
+                    alert('Bạn đã đăng ký thành công!')
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

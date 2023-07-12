@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <img id="image" src="../Bách Khoa Hà Nội/IMG/QuockyVN.jpg" alt="Image">
+        <button id="moveButton">Di chuyển</button>
+    </div>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        #container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+
+        #image {
+            position: absolute;
+            width: 200px;
+            top: 0;
+            left: 0;
+            transition: top 3s, left 3s;
+        }
+
+        button {
+            margin: 20px 0 0 300px;
+        }
+    </style>
+
+    <script>
+        var image = document.getElementById('image');
+        var container = document.getElementById('container');
+        document.querySelector('#moveButton').onclick = () => {
+            var targetTop = container.offsetHeight - image.offsetHeight;
+            var targetLeft = container.offsetWidth - image.offsetWidth;
+
+            image.style.top = targetTop + 'px';
+            image.style.left = targetLeft + 'px';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(31, 79, 159);
+    --active-color: #f48020;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+.w70 {
+    width: 70% !important;
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+}
+
+.header__brand {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__brand-img {
+    width: 60px;
+}
+
+.header__brand-name {}
+
+.header__brand-name p {
+    margin: 0;
+}
+
+.header__brand-name p:nth-child(2) {
+    font-size: 12px;
+}
+
+.header__right {
+    align-items: center;
+    height: 100%;
+}
+
+.header__search {
+    flex: 2;
+    background-color: #7490c0;
+}
+
+.header__search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.header__search input::placeholder {
+    color: #fff;
+}
+
+.header__search i {
+    color: #fff;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.header__language {
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+    color: #fff;
+
+}
+
+.header__language-img {
+    height: 20px;
+    border-radius: 100%;
+}
+
+.header__language p {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#navigation {}
+
+.nav__list {
+    list-style-type: none;
+    height: 46px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--active-color);
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.active {
+    color: var(--active-color);
+}
+
+#slider {
+    background-color: #f48020;
+}
+
+.slider img {
+    height: calc(100vh - 136px);
+    width: 100%;
+    object-fit: cover;
+}
+
+#slider>.container-fluid {
+    padding: 00;
+    margin: 0;
+}

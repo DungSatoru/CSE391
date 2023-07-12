@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hạ Quang Dũng</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h3>Bạn thích chơi:</h3>
+        <button class="game" onclick="displayIMG('game')">Game</button>
+        <button class="football" onclick="displayIMG('football')">Đá banh</button>
+        <div class="sliders">
+            <img class="slider" src='game.png'>
+            <img class="slider" src='football.png'>
+        </div>
+        <div class="content"></div>
+    </div>
+
+    <div class="table">
+        <table class="table_info">
+            <tr>
+                <td>Họ tên</td> <td><input class = "inputName" type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td> <td><input class = "inputEmail" type="email"></td>
+            </tr>
+            <tr>
+                <td>Mã TP</td> <td><input class = "inputCity" type="text"></td>
+            </tr>
+            <tr>
+                <td>Thành phố</td>
+                <td>
+                    <select name="city" id="">
+                        <option value="HN">Hà Nội</option>
+                        <option value="DN">Đà Nẵng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button class="submit">Submit</button></td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+
+</html>

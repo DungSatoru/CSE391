@@ -1,0 +1,689 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app {}
+
+/* Dùng chung */
+.w1170 {
+    width: 1170px;
+    margin: auto;
+}
+
+#header {
+    border-top: 10px solid #2b3f8d;
+
+}
+
+.header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 17px 0;
+    max-height: 125px;
+}
+
+.header__brand-brandLink {
+    width: 70%;
+
+}
+
+.header__brand-img {
+    width: 65%;
+}
+
+.header__brand-right {
+    /* background-color: #2b3f8d; */
+}
+
+.header__brand-right--meta {
+    display: flex;
+    justify-content: right;
+    margin-top: 24px;
+}
+
+.header__brand-right__meta-login {
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__brand-right__meta-Language {}
+
+.header__brand-right__meta-Language--VN,
+.header__brand-right__meta-Language--EN {
+    text-decoration: none;
+}
+
+.header__brand-right--search {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f7f9;
+    border-radius: 5px;
+}
+
+.header__brand-right--search i {
+    background-color: #f2f7f9;
+    width: 20px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header__brand-right--search input {
+    border: none;
+    background-color: #f2f7f9;
+}
+
+.header__brand-right--search :nth-child(3) {
+    background-color: #a5d6ea;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+
+.header2 {
+    background: url(../img/Header/bgr-slider.jpg) repeat;
+    height: fit-content;
+    width: 100%;
+}
+
+.header2_1 {}
+
+.header2_1-Bar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 46px;
+    background-color: #0a1f77;
+    align-items: center;
+    display: none;
+}
+
+
+.header2_1-Bar-right {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.fa-bars {
+    width: 46px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header2_1-Bar--input {
+    width: 100%;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header2_1-Bar--input:focus .header2_1-Bar-right {}
+
+.fa-magnifying-glass {
+    width: 46px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 4px 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header2_nav {
+    display: flex;
+    background-color: #0a1f77;
+    color: #fff;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header2_nav li {}
+
+
+/* .header2_nav-subnav > a{
+    border-left: 1px solid white;
+    margin: 0 10px;
+} */
+
+/* .header2_nav :first-child > a {
+    border-left: none;
+    margin-left: 0;
+} */
+
+.header2_nav > :not(:first-child) > a {
+    border-left: 1px solid white;
+    margin: 0 10px;
+}
+
+.header2_nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0 0 15px;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ---- */
+.header2_nav-submenu {
+    display: none;
+    position: absolute;
+    width: 255px;
+    height: fit-content;
+    background-color: #50bbff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header2_nav-subnav > i {
+    display: none;
+}
+
+.header2_nav-submenu li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header2_nav-submenu li a {
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 600;
+    list-style-type: none;
+    text-transform: none;
+}
+
+.header2_nav-submenu li a:hover {
+    color: #2b3f8d;
+    font-style: italic;
+}
+
+
+/* Hiển thị submenu */
+/* .header2_nav-GioiThieu {
+    position: relative;
+} */
+
+
+
+
+
+
+
+
+.header2__imgTrans {}
+
+.header2__imgTrans a {}
+
+
+.header2__imgTrans a img {
+    width: 100%;
+}
+
+/* CONTAINER */
+#container {
+    padding-bottom: 100px;
+}
+
+.container__navbar {}
+
+.container__navbar-items {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.container__navbar-items > div {
+    display: flex;
+    min-width: 50%;
+    justify-content: space-between;
+}
+
+.container__navbar-item {
+    margin: 10px 0 0 0;
+    width: 20%;
+    text-align: center;
+}
+
+
+.container__navbar-item a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #001373;
+    font-size: 13.5px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container__navbar-item:hover a {
+    color: #028BFF;
+
+}
+
+.container__navbar-item>a>div {
+    width: 40px;
+    height: 25px;
+}
+
+.container__navbar-item>a>div img {
+    height: 100%;
+
+}
+
+/* Container__Info */
+.container__Info {
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* SHOW */
+
+.container__Info-Show {
+    width: 42%;
+}
+
+.container__Info-Show--img {
+    width: 100%;
+}
+
+
+
+/* Category */
+.container__Info-Category {
+    width: 30%;
+}
+
+.container__Info-Category--btn {
+    display: flex;
+
+}
+
+.container__Info-Category__news,
+.container__Info-Category__infoma {
+    width: 50%;
+    height: 46px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 18px;
+}
+
+.container__Info-Category__news {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: red;
+
+}
+
+.container__Info-Category__infoma:focus {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: red;
+
+}
+
+
+.container__Info-Category__infoma:focus-within .container__Info-Category__news {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.container__Info-Category__news--Title {}
+
+.container__Info-Category__news--Title li {
+    padding-top: 10px;
+    color: #028BFF;
+}
+
+.container__Info-Category__news--Title li a {
+    text-decoration: none;
+    font-size: 16px;
+
+    color: #000;
+}
+
+.container__Info-Category__news--Title li:hover a {
+    color: #028BFF;
+}
+
+
+.container__Info-Department {
+    min-width: 23%;
+
+}
+
+.container__Info-Department--Title {
+    margin: 0;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #e7e8f1;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container__Info-Department--items {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+
+.container__Info-Department--item {
+    display: block;
+    text-decoration: none;
+    color: #0a1f77;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc;
+    margin-left: 10px;
+}
+
+.container__Info-Department--item:hover {
+    color: #50bbff;
+}
+
+.container__Info-Department--item:first-child {
+    margin-top: 10px;
+}
+
+.container__Info-Department--item:last-child {
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+/* TuyenSinh */
+
+.container__TuyenSinh {
+    background-color: #efefef;
+    width: 100%;
+    padding: 30px 0;
+    margin: 20px 0 0 0;
+}
+
+.container__TuyenSinh .w1170 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container__TuyenSinh .w1170 a {
+    display: block;
+    height: 80%;
+    width: 30%;
+}
+
+.container_TuyenSinh--img {
+    width: 100%;
+    max-height: 100%;
+
+}
+
+/* DAOTAO */
+
+.container__DaoTao {
+    margin-bottom: 10px;
+}
+
+.container__DaoTao-Title {
+    font-size: 20px;
+    color: #001373;
+    margin: 10px 0;
+}
+
+.container__DaoTao .w1170:nth-child(3) {
+    justify-content: right;
+}
+
+.container__DaoTao .w1170:nth-child(3) a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container__DaoTao .w1170:nth-child(3):hover a {
+    color: #028BFF;
+}
+
+.container__DaoTao .w1170 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__DaoTao-Left {
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    flex-wrap: wrap;
+}
+
+.container__DaoTao-Left--items {
+    width: 32%;
+    color: #000;
+    text-decoration: none;
+}
+
+.container__DaoTao-Left--img {
+    width: 100%;
+    height: 160px;
+}
+
+.container__DaoTao-Left--content {}
+
+
+.container__DaoTao-Right {
+    width: 25%;
+}
+
+.container__DaoTao-Right--List a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.container__DaoTao-Right--List a::after {
+    display: block;
+}
+
+
+
+.container__DaoTao-Right--List a:hover {
+    color: #028BFF;
+}
+
+.container__DaoTao-Right--item {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+
+}
+
+/* DOINGOAI */
+.container__DoiNgoai {
+    background-color: #efefef;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/* NGHIENCUU SUKIEN */
+.container__NghienCuu_SuKien .w1170 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__NghienCuu {
+    width: 74%;
+}
+
+.container__SuKien {
+    width: 25%;
+}
+
+.container__NghienCuu-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.container__NghienCuu-items {
+    width: 32%;
+    color: #000;
+    text-decoration: none;
+}
+
+.container__NghienCuu-img {
+    width: 100%;
+    height: 160px;
+
+}
+
+
+.container__NghienCuu-Title,
+.container__SuKien-Title {
+    font-size: 20px;
+    color: #001373;
+    margin: 10px 0 ;
+
+}
+
+.container__SuKien-img {
+    width: 100%;
+}
+
+
+/* SINHVIEN */
+.container__SinhVien {
+    background-color: #efefef;
+}
+
+.container__SinhVien-Title {
+    padding: 20px 0 0 0;
+    font-size: 20px;
+    color: #001373;
+}
+
+.container__SinhVien .w1170:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__SinhVien-HienTai,
+.container__SinhVien-CuuSV {
+    width: 49%;
+}
+
+.container__SinhVien-HienTai--img,
+.container__SinhVien-CuuSV--img {
+    width: 100%;
+}
+
+.container__SinhVien_List a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container__SinhVien_List a:hover {
+    color: #2b3f8d;
+}
+
+.container__SinhVien-item {
+    padding: 3px 0;
+}
+
+
+/* FOOTER */
+#footer {}
+
+.footer__Top {
+    background-color: #004eaf;
+    height: 60px;
+
+}
+
+.footer__Top .w1170 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__Top-CopyRight p {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    line-height: 60px;
+}
+
+.footer__Top-SocialNetWork {
+    align-self: center;
+}
+
+.footer__Top-SocialNetWork--img {
+    width: 40px;
+}
+
+.footer__Bottom {
+    background-color: #001372;
+    padding: 30px 0;
+}
+
+.footer__Bottom .w1170 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__Bottom-Map {
+    width: 100%;
+}
+
+.footer__Bottom-Info {
+    margin: 0 0 0 30px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer__Bottom-Info p:first-child {
+    font-size: 24px;
+}
+
+.footer__Bottom-Info p:last-child {
+    line-height: 32px;
+}

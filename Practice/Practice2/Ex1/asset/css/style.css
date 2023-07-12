@@ -1,0 +1,65 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #f2f2f2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+.formGetTheInvite {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.formGetTheInvite h1 {
+    line-height: 100px;
+}
+
+
+.formGetTheInvite .ti-email {
+    padding: 8px;
+    border: 2px solid #7fc6cd;
+    border-radius: 50%;
+    color: #8dd5dc;
+    font-size: 46px;
+}
+
+.formGetTheInvite .content {
+    color: #9e9e9e;
+}
+
+.formGetTheInvite .content .content-input,
+.formGetTheInvite .content .content-btn {
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.formGetTheInvite .content .content-input {
+    width: 300px;
+    margin-top: 40px;
+    padding-left: 10px;
+    
+
+}
+
+.formGetTheInvite .content .content-btn {
+    margin-top: 16px;
+    background-color: #8dd5dc;
+    width: 150px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.formGetTheInvite .content .content-btn:hover {
+    background-color: #7fc6cd;
+}
+
+

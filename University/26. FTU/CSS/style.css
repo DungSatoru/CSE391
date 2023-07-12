@@ -1,0 +1,150 @@
+*,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #c11a21;
+    --secondaary-color: #f8f8f8;
+}
+
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header {
+    border-bottom: 2px solid var(--primary-color);
+}
+.header__Top {
+    position: relative;
+}
+
+.header__Top-list {
+    background-color: var(--secondaary-color);
+}
+
+.header__Top-item,
+.Nav__item {
+    padding: 0 35px;
+    border-right: 1px solid #ccc;
+}
+
+.header__Top-item:not(:first-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.header__Top-item a,
+.Nav__item a {
+    line-height: 46px;
+    font-size: 12px;
+}
+
+.header__Top-item:hover,
+.Nav__item:hover {
+    background-color: var(--primary-color) !important;
+}
+
+.header__Top-item:hover a,
+.Nav__item:hover a{
+    color: #FFF !important;
+}
+
+.header__Top-search {
+    height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.header__Top-search i {
+    line-height: 46px;
+
+}
+
+.header__Top-search input {
+    outline: none;
+    width: 150px;
+    transition: all 0.2s linear;
+}
+
+.header__Top-search input:focus {
+    width: 200px;
+}
+.header__Bottom {
+    padding: 20px 0;
+}
+.header__Bottom-event img {
+    width: 100%;
+}
+.header__Bottom-calender {
+    background-color: #ccc;
+    width: 100px;
+    text-align: center;
+}
+#Nav {
+    border-bottom: 1px solid #ccc;
+}
+.Nav__item a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.Nav__item {
+    padding: 0 30px;
+    background-color: #fff !important;
+}
+.Nav__item:first-child {
+    border-left: 1px solid #ccc;
+}
+.Nav__item:last-child {
+    border-left: 1px solid #ccc;
+}
+#Content {
+    margin-top: 20px;
+}
+#Slider img {
+    width: 100%;
+}
+#Aside {
+    border: 1px solid #bbb;
+}
+.Aside-info {
+
+}
+.Aside-info__title {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #bbb;
+}
+.Aside-info__content {
+
+}
+.Aside-info__content-tag {
+    border: 1px solid #999;
+    font-size: 12px;
+    padding: 3px 5px;
+    color: #000;
+}
+.Aside-info__content-tag:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.Aside-info__content-date {
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+}
+.Aside-info__content-title {
+    color: #000;
+}
+.Aside-info__content-title:hover {
+    color: var(--primary-color);
+}
+.Aside__item {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}

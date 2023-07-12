@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/Reset.css">
+
+    <style>
+        .app {
+            background-color: #fff;
+            margin-top: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #form {
+            padding: 40px;
+        }
+
+        .Title {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            height: 35px;
+            width: 100%;
+            padding: 0 0 0 10px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-mesage {
+            color: red;
+            font-size: 14px;
+        }
+
+        #Submit {
+            background-color: #1488db;
+            padding: 10px 30px;
+            border: 1px solid #1488db;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        #Submit:hover {
+            color: #1488db;
+            background-color: #fff;
+        }
+
+        .info {
+            width: 47%;
+        }
+
+        .info a {
+            color: #000;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form action="" id="form">
+                        <p class="Title">Thông tin liên hệ</p>
+                        <div class="form-group">
+                            <input id="Name" type="text" placeholder="Tên của bạn">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group">
+                            <input id="Email" type="text" placeholder="Email của bạn">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group">
+                            <input id="Title" type="text" placeholder="Tiêu đề thư">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" aria-placeholder="">
+                                <option value="0">Lựa chọn danh mục</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="Content" type="text" placeholder="Nội dung"></textarea>
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <button id="Submit">Gửi</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="infos d-flex justify-content-between">
+                        <p class="info">Số điện thoại: <a href="#">028 3864 7256 - 5282 (Phòng Tổ chức Hành chính)</a>
+                        </p>
+                        <p class="info">Email: <a href="#">info@hcmut.edu.vn</a></p>
+                    </div>
+                    <img src="./img/map.png" alt="" class="w-100 h-75 mt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script>
+        function check(ID, Regex, message = '') {
+            if ($(ID).val() === "") {
+                $(ID).next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (Regex !== '0') {
+                if (!Regex.test($(ID).val())) {
+                    $(ID).next('.form-message').text(message).show();
+                    return false;
+                }
+            }
+            $(ID).next(".form-message").hide();
+            return true;
+        }
+
+        $(document).ready(function () {
+            $('#Name').on('input', () => { check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ') })
+            $('#Email').on('input', () => { check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!\nExample: abc@gmail.com') })
+            $('#Title').on('input', () => { check('#Title', '0', '') })
+            $('#Content').on('input', () => { check('#Content', '0', '') })
+
+
+            $('#Submit').click(function (e) {
+                e.preventDefault();
+                const isName = check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ');
+                const isEmail = check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!');
+                const isTitle = check('#Title', '0', '');
+                const isContent = check('#Content', '0', '');
+
+                if (isName && isEmail && isContent && isTitle) {
+                    alert('Bạn đã đăng ký thành công!')
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

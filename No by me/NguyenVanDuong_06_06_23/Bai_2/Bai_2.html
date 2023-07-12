@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập số 2</title>
+    <link rel="stylesheet" href="Bai_2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="check">
+        <label for=""><input type="radio" id="red" name="color" onclick="change_color()"> Màu đỏ</label>
+        <label for=""><input type="radio" id="blue" name="color" onclick="change_color()"> Xanh da trời</label>
+        <label for=""><input type="radio" id="green" name="color" onclick="change_color()"> Xanh lá cây</label>
+    </div>
+
+    <div class="box" id="box_red" style="background-color: red; color: white; height: 50px; line-height: 50px;">
+        Bạn đã chọn red button
+    </div>
+    <div class="box" id="box_blue" style="background-color: blue; color: white; height: 50px; line-height: 50px;">
+        Bạn đã chọn blue button
+    </div>
+    <div class="box" id="box_green" style="background-color: green; color: white; height: 50px; line-height: 50px;">
+        Bạn đã chọn green button
+    </div>
+    <!-- <div id="text">
+        <p>Bạn chưa chọn color button nào</p>
+    </div> -->
+    <!-- <script src="Bai_2.js"></script> -->
+    <script type="text/javascript">
+        $(".box").hide();
+        $("#red").bind("click", function(){
+            $("#box_red").show();
+            $("#box_blue").hide();
+            $("#box_green").hide();
+        });
+        $("#blue").bind("click", function(){
+            $("#box_red").hide();
+            $("#box_blue").show();
+            $("#box_green").hide();
+        });
+        $("#green").bind("click", function(){
+            $("#box_red").hide();
+            $("#box_blue").hide();
+            $("#box_green").show();
+        });
+    </script>
+</body>
+</html>

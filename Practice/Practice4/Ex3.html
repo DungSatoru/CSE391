@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+</head>
+
+<body>
+    <div class="layer1">
+        <img src="../Đại học Thủy lợi/img/Container/Info/SinhVien_HienTai.jpg" alt="Image 1">
+    </div>
+    <div class="layer2">
+        <img src="../Đại học Thủy lợi/img/Container/Info/SinhVien_CuuSV.jpg" alt="Image 2">
+    </div>
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .layer1,
+        .layer2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .layer1 img,
+        .layer2 img {
+            position: absolute;
+        }
+
+        .layer1 img {
+            animation: slideRight 10s linear;
+        }
+        .layer2 img {
+            animation: slideDown 8s linear;
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+
+    <script>
+        setInterval(moveLayer1, 10000);
+        setInterval(moveLayer2, 10000);
+
+        function moveLayer1() {
+            const layer1 = document.querySelector('.layer1');
+            layer1.style.animation = 'none';
+            void layer1.offsetWidth;
+            layer1.style.animation = 'slideRight 10s linear infinite';
+        }
+
+        function moveLayer2() {
+            const layer2 = document.querySelector('.layer2');
+            layer2.style.animation = 'none';
+            void layer2.offsetHeight;
+            layer2.style.animation = 'slideDown 8s linear infinite';
+        }
+
+    </script>
+</body>
+
+</html>

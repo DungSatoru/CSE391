@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập số 4</title>
+    <link rel="stylesheet" href="Bai_4.css">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h2><b>ĐĂNG KÝ THÀNH VIÊN</b></h2>
+            <div class="account">
+                <h3>THÔNG TIN TÀI KHOẢN</h3>
+
+                <span>Username:</span>
+                <input id="name" type="text">
+                <br>
+                <span>Password:</span>
+                <input id="password" type="text">
+                <br>
+                <span>Nhập lại password:</span>
+                <input id="repassword" type="text">
+            </div>
+
+            <div class="personal">
+                <h3>THÔNG TIN CÁ NHÂN</h3>
+
+                <span>Họ và tên:</span>
+                <input id="fullname" type="text">
+                <br>
+                <span>Giới tính:</span>
+                <select name="Sex" id="">
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                    <option value="Other">Khác</option>
+                </select>
+                <br>
+                <span id="dia_chi">Địa chỉ:</span>
+                <textarea name="" id="" cols="15" rows="5"></textarea>
+                <br>
+                <span>Ngày sinh:</span>
+                <input id="date" type="date">
+                <br>
+                <span>Email:</span>
+                <input id="email" type="text">
+                <br>
+                <span id="hon_nhan">Tình trạng hôn nhân:</span>
+                <div class="check_box">
+                    <input type="radio" name="hon_nhan"> độc thân
+                    <input type="radio" name="hon_nhan"> đã đính hôn
+                    <input type="radio" name="hon_nhan"> ly dị
+                    <input type="radio" name="hon_nhan"> quá phụ
+                    <br>
+                </div>
+                <input id="submit" type="submit" value="Gửi đi">
+                <input id="reset" type="reset" name="" id="" value="Nhập lại">
+            </div>
+        </div>
+    </form>
+    <script src="Bai_4.js"></script>
+</body>
+</html>

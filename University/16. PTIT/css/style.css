@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #d30000;
+}
+.line_colorRed > div {
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color);
+
+}
+
+/* ----------------------------------------------------------------------- */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+.app {
+    background-color: #f3f7f9;
+}
+
+#header {
+    background-color: #fff;
+}
+
+
+.headerTop__brand {
+    padding: 15px 0;
+}
+
+.headerTop__brand img {
+    width: 200px;
+    height: 100px;
+    margin-left: 18px;
+}
+
+.headerTop__schoolName {
+    margin-left: 35px;
+}
+
+.headerTop__schoolName p {
+    font-size: 19px;
+    margin: 15px 0px 0px;
+}
+
+.headerTop__schoolName p:last-child {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+#Nav {
+    border-bottom: 3px solid var(--primary-color);
+    background-color: #fff;
+}
+
+.Nav__item {
+    line-height: 60px;
+}
+
+.Nav__item a {
+    color: #000;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.Nav__item:hover a {
+    color: var(--primary-color);
+}
+
+
+.slider {
+    animation: transfer 10s ease-in infinite;
+    height: 500px;
+}
+
+.slider>a>img {
+    width: 100%;
+}
+
+@keyframes transfer {
+    0% {
+        background-image: url(../img/Slider.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    10% {
+        background-image: url(../img/Slider.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    20% {
+        background-image: url(../img/Slider.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    30% {
+        background-image: url(../img/Slider.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    40% {
+        background-image: url(../img/Slider1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url(../img/Slider1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background-image: url(../img/Slider1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    70% {
+        background-image: url(../img/Slider.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    80% {
+        background-image: url(../img/Slider.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    90% {
+        background-image: url(../img/Slider.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(../img/Slider.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

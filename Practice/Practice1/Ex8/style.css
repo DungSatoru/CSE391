@@ -1,0 +1,42 @@
+:root {
+    --header-height: 46px;
+    --header-color: #000086;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+
+}
+
+#nav {
+   width: 200px;
+}
+
+
+  
+#nav li {
+    display: block;
+    position: relative;
+}
+  
+#nav li a {
+    padding: 0 24px;
+    line-height: var(--header-height);
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--header-color);
+    width: 200px;
+}
+
+
+
+#nav li:hover a {
+    display: block;
+    background-color: #c00;
+}

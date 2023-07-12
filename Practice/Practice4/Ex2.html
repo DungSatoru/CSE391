@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(to right, #bc5151, #c4d8c4, #2c2c90);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="clock"></h1>
+
+    <script>
+        function updateTime() {
+            const date = new Date();
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            const seconds = String(date.getSeconds()).padStart(2, '0');
+            const time = hours + ':' + minutes + ':' + seconds;
+
+            document.getElementById('clock').innerText = time;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>

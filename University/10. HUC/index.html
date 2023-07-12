@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đại học Văn Hóa</title>
+  <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+  <link rel="shortcut icon" href="./assets/img/logohuc.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div id="main">
+    <header id="header" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="header__left d-flex justify-content-start">
+              <ul class="header__list m-0 list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Sinh viên hiện tại</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Cơ hội việc làm</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="header__right d-flex justify-content-end align-items-center gap-2">
+              <div class="header__input-wrapped d-flex align-items-center px-2 rounded-3">
+                <input type="text" name="search" id="search" class="header__input" placeholder="Tìm kiếm">
+                <i class="fa-solid fa-search"></i>
+              </div>
+              <img src="./assets/img/vn.jpg" alt="" class="header__vn">
+              <a href="#" class="header__link text-decoration-none text-uppercase"><i
+                  class="fa-solid fa-user me-1"></i>Đăng nhập</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="Brand_Nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div id="brand">
+              <a href="#"
+                class="brand__link d-flex justify-content-start align-items-center text-decoration-none gap-2 h-100">
+                <img src="./assets/img/logohuc.jpg" alt="" class="brand__image">
+                <div class="brand__name">
+                  <h6 class="m-0 text-white fw-bold text-uppercase">Trường Đại Học Văn Hóa Hà Nội</h6>
+                  <h6 class="m-0 text-white fw-medium">Hanoi University of Culture</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <nav id="Nav" class="h-100">
+              <ul class="slider__list list-unstyled d-flex align-items-center gap-3 h-100">
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium"><i
+                      class=" fa-solid fa-home"></i></a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Giới thiệu</a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Đào tạo</a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Khoa đào tạo</a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Tin tức - sự kiện</a>
+                </li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Tuyển sinh</a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Nghiên cứu khoa học</a>
+                </li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">Hợp tác</a></li>
+                <li><a href="#" class="text-decoration-none text-uppercase text-white fw-medium">tạp chí khoa học</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="slider">
+
+    </div>
+  </div>
+
+
+  <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('Brand_Nav');
+      var scrollPosition = window.scrollY;
+    
+      if (scrollPosition > 50) {
+        header.classList.add('fixed');
+      } else {
+        header.classList.remove('fixed');
+      }
+    });
+  </script>
+</body>
+
+</html>

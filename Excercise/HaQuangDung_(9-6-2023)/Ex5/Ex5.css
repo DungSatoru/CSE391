@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+}
+.bigbox {
+    border: 1px solid gray;
+}
+.header {}
+.header img {
+    width: 100%;
+}
+ .row {
+ }
+ .row .col-3 {
+    height: 500px;
+}
+ .row .col-3 .imge {
+    list-style: none;
+    height: 500px;
+    background-color: aqua;
+    padding: 0 5px;
+}
+ .row .col-3 ul li {}
+ .row .col-3 ul li a {}
+
+ .col-9 {}
+ .col-9 .container_ {}
+ .col-9 .container_ form {
+    padding: 0 0 0 147px;
+ }
+ .col-9 .container_ form h2 {
+    margin-top: 30px;
+ }
+ .col-9 .container_ form label {
+    margin-top: 30px;
+    font-size: 22px;
+ }
+ .col-9 .container_ form label input {}
+ .col-9 .container_ form textarea {
+    margin-left: 107px;
+ }
+ .col-9 .container_ form .submit_ {
+    margin-left: 150px;
+ }
+ .col-9 .container_ form .submit_ input {
+    padding: 2px 7px;
+ }

@@ -1,0 +1,31 @@
+img {
+    width: 200px;
+}
+
+.open {
+    display: block;
+}
+
+img {
+    display: none;
+}
+
+.sliders {
+    display: flex;
+}
+
+
+.table_info {
+    border: solid 1px #ccc;
+    margin-top: 20px;
+}
+
+.submit {
+    margin: 0;
+}
+
+
+table , tr, td, th{
+    /* border-collapse: collapse; */
+    border: 1px solid #000;
+}

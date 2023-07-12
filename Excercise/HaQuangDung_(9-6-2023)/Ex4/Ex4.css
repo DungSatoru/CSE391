@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #555;
+}
+
+.app {
+    margin: 20vh auto 0;
+    width: 420px;
+    background-color: #fff;
+}
+
+.container{
+    display: inline-block;
+    width: 100%;
+    line-height: 25px;
+    border: 2px solid black;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+.check_box{
+    margin-right: 0;
+    width: 169px;
+    display: inline-block;    
+}
+#dia_chi{
+    bottom: 35px;
+    position: relative;
+}
+#hon_nhan{
+    position: relative;
+    bottom: 15px;
+}
+#submit{
+    margin-left: 100px;
+}
+#reset{
+    margin-left: 5px;
+}
+#name{
+    margin-left: 55px;
+}
+#password{
+    margin-left: 58px;
+}
+#fullname{
+    margin-left: 56px;
+}
+select{
+    margin-left: 60px;
+}
+textarea{
+    margin-left: 71px;
+}
+#date{
+    margin-left: 52px;
+    width: 166px;
+}
+#email{
+    margin-left: 79px;
+}
+
+
+.form-message {
+    color: red;
+    background-color: rgb(249, 213, 213);
+    margin-top: 2px;
+    font-style: italic;
+    font-size: 14px;
+    padding: 0 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 125px;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 130px);
+}
+textarea {
+    width: calc(100% - 130px);
+}

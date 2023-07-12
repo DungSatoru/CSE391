@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/Reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./img/Logo-Thuy_Loi.png">
+    <link rel="stylesheet" href="./css/animation.css">
+    
+
+    <title>Trang chủ Trường Đại học Thủy lợi</title>
+</head>
+
+<body>
+    <div class="app">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="w1170 header__brand">
+                            <a href="" class="header__brand-brandLink">
+                                <img src="./img/Header/logo.png" alt="" class="header__brand-img">
+                            </a>
+                            <div class="header__brand-right">
+                                <div class="header__brand-right--meta">
+                                    <a href="./login.html" class="header__brand-right__meta-login">Login</a>
+                                    <div class="header__brand-right__meta-Language">
+                                        <a href="" class="header__brand-right__meta-Language--VN">
+                                            <img src="./img/Header/vi.jpg" alt="">
+                                        </a>
+                                        <a href="" class="header__brand-right__meta-Language--EN">
+                                            <img src="./img/Header/en.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header__brand-right--search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" name="" id="" placeholder="Tìm kiếm">
+                                    <input type="button" name="" id="" placeholder="" value="Tìm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <div class="w1170 header2_1">
+                    <ul class="header2_1-Bar">
+                        <li><i id="nav-bar-Icons" class="fa-solid fa-bars"></i></li>
+                        <li class="header2_1-Bar-right">
+                            <input type="text" class="header2_1-Bar--input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+
+                    <ul id="header2_nav" class="header2_nav">
+                        <li class="header2_nav-subnav header2_nav-home"><a href=""><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-GioiThieu">
+                            <a href="#">Giới thiệu</a>
+                            <i id="GioiThieu_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="GioiThieu_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-GioiThieu--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tổng quan</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Sứ mạng, Tầm nhìn</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Cơ cấu tổ chức và nhân lực</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Cơ sở vật chất</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Công tác Đảng</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Công tác Công Đoàn</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-TTTB">
+                            <a href="#">Tin tức & Thông báo</a>
+                            <i id="TTTB_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="TTTB_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-TTTB--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tin tức</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thông báo</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-TuyenSinh">
+                            <a href="#">Tuyển sinh</a>
+                            <i id="TuyenSinh_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="TuyenSinh_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-TuyenSinh--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tuyển sinh Đại học</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tuyển sinh Thạc sĩ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tuyển sinh Tiến sĩ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Vừa học vừa làm</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-DaoTao">
+                            <a href="#">Đào tạo</a>
+                            <i id="DaoTao_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="DaoTao_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-DaoTao--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thạc sĩ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Đại học chính quy</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Cam kết đảm bảo chất lượng đào
+                                        tạo</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thông báo, tin tức dhcq</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tiến sĩ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Vừa học vừa làm</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-NghienCuu">
+                            <a href="#">Nghiên cứu</a>
+                            <i id="NghienCuu_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="NghienCuu_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-NghienCuu--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tin khoa học và công nghệ</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> NCKH & chuyển giao công
+                                        nghệ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Quỹ phát triển KH & CN</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Sở hữu trí tuệ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Nhóm nghiên cứu mạnh</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Các đơn vị KHCN</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Hội nghị, hội thảo</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tạp chí KHKT Thủy lợi & Môi
+                                        trường</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Văn bản, quy chế, biểu mẫu</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thông báo KHCN</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Liên hệ</a></li>
+                            </ul>
+
+
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-DoiNgoai">
+                            <a href="#">Đối ngoại</a>
+                            <i id="DoiNgoai_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="DoiNgoai_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-DoiNgoai--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Giới thiệu chung</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Dự án quốc tế</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Hợp tác đào tạo quốc tế</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Tin tức đối ngoại</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Liên hệ</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thỏa thuận hợp tác</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Quy chế, Quy định về đối
+                                        ngoại</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-VanBan"><a href="#">Văn bản</a></li>
+                        <li class="header2_nav-subnav header2_nav-SinhVien">
+                            <a href="https://sinhvien.tlu.edu.vn/" target="_blank">Sinh viên</a>
+                            <i id="SinhVien_down" class="fa-solid fa-chevron-down hiden"></i>
+                            <i id="SinhVien_up" class="fa-solid fa-chevron-up"></i>
+                            <ul class="header2_nav-submenu header2_nav-SinhVien--submenu">
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Thông báo</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Hỗ trợ sinh viên</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Gương mặt sinh viên</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Hoạt động sinh viên</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Học phí</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Gương mặt cựu sinh viên</a>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Danh sách sinh viên tốt
+                                        nghiệp</a></li>
+                                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Giáo viên chủ nhiệm</a></li>
+                            </ul>
+                        </li>
+                        <li class="header2_nav-subnav header2_nav-LienHe"><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <div class="header2__imgTrans">
+                        <a href="">
+                            <img src="./img/Header/tsinh23thumb.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="container">
+            <div class="w1170 container__navbar">
+                <ul class="container__navbar-items">
+                    <div>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/1_tuyen_sinh.png" alt=""></div>
+                                <br>Tuyển sinh
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/2.png" alt=""></div>
+                                <br>Thông tin việc làm
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/3_quality.jpg" alt=""></div>
+                                <br>Đảm bảo chất lượng
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/4_www.jpg" alt=""></div>
+                                <br>Tạp chí
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/5_library.jpg" alt=""></div>
+                                <br>Thư viện
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/6_email.jpg" alt=""></div>
+                                <br>TLU Mail
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/7_lichcongtac.jpg" alt=""></div>
+                                <br>Lịch công tác
+                            </a>
+                        </li>
+                        <li class="container__navbar-item">
+                            <a href="#">
+                                <div><img src="./img/Container/Navbar/8_user.jpg" alt=""></div>
+                                <br>Đăng ký học
+                            </a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="w1170 container__Info">
+                <div class="container__Info-Show">
+                    <img src="./img/Container/Info/HAQ09735.JPG" alt="" class="container__Info-Show--img">
+                    <h3 class="container__Info-Show--Title">Thông báo tuyển sinh năm 2023 của Trường Đại học Thủy lợi
+                    </h3>
+                </div>
+
+                <div class="container__Info-Category">
+                    <div class="container__Info-Category--btn">
+                        <button class="container__Info-Category__news">TIN TỨC</button>
+                        <button class="container__Info-Category__infoma">THÔNG BÁO</button>
+                    </div>
+                    <ul class="container__Info-Category__news--Title">
+                        <li><a href="#">Trường Đại học Thủy lợi thông báo tuyển dụng viên chức</a></li>
+                        <li><a href="#">Thông báo tuyển sinh năm 2023 của Trường Đại học Thủy lợi</a></li>
+                        <li><a href="#">Khai mạc Hội nghị khoa học sinh viên lần thứ 36 cấp Khoa năm 2023</a></li>
+                        <li><a href="#">Nam sinh nhận học bổng toàn phần tại 4 nước Châu Âu, tiết lộ ngành học lương
+                                lên đến vài nghìn đô</a></li>
+                        <li><a href="#">Công bố quyết định công nhận Ban chấp hành Công Đoàn trường khóa XXX, nhiệm
+                                kỳ 2023 - 2028</a></li>
+                    </ul>
+                </div>
+
+                <div class="container__Info-Department">
+                    <h2 class="container__Info-Department--Title">
+                        PHÂN HIỆU - KHOA
+                    </h2>
+                    <div class="container__Info-Department--items">
+                        <a href="" class="container__Info-Department--item">Phân hiệu Đại học Thủy lợi</a>
+                        <a href="" class="container__Info-Department--item">Khoa Công trình</a>
+                        <a href="" class="container__Info-Department--item">Khoa Kỹ thuật tài nguyên nước</a>
+                        <a href="" class="container__Info-Department--item">Khoa Công nghệ thông tin</a>
+                        <a href="" class="container__Info-Department--item">Khoa Cơ khí</a>
+                        <a href="" class="container__Info-Department--item">Khoa Điện - Điện tử</a>
+                        <a href="" class="container__Info-Department--item">Khoa Kinh tế và Quản lý</a>
+                        <a href="" class="container__Info-Department--item">Khoa Hóa - Môi Trường</a>
+                        <a href="" class="container__Info-Department--item">Trung tâm đào tạo quốc tế</a>
+                        <a href="" class="container__Info-Department--item">Khoa Luật và Lý luận chính trị</a>
+                        <a href="" class="container__Info-Department--item">Viện ĐT và KHƯD Miền Trung</a>
+                        <a href="" class="container__Info-Department--item">TTKH và triển khai KTTL</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__TuyenSinh">
+                <div class="w1170">
+                    <a href=""><img src="./img/Container/Info/TuyenSinhDH.jpg" alt=""
+                            class="container_TuyenSinh--img"></a>
+                    <a href=""><img src="./img/Container/Info/TuyenSinhThacSi.jpg" alt=""
+                            class="container_TuyenSinh--img"></a>
+                    <a href=""><img src="./img/Container/Info/TuyenSinhTS.jpg" alt=""
+                            class="container_TuyenSinh--img"></a>
+                </div>
+            </div>
+
+            <div class="container__DaoTao">
+                <div class="w1170">
+                    <p class="container__DaoTao-Title">ĐÀO TẠO</p>
+                </div>
+                <div class="w1170">
+                    <div class="container__DaoTao-Left">
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DaoTao_Thongbao.jpg" alt=""
+                                class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Thông tin thời gian bảo vệ luận án tiến sĩ cấp
+                                Trường của NCS Nguyễn Thế Toàn</p>
+                        </a>
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DaoTao_Thongbao.jpg" alt=""
+                                class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Thông tin thời gian bảo vệ luận án tiến sĩ cấp
+                                Trường của NCS Tô Xuân Quỳnh</p>
+                        </a>
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DaoTao_CDR.jpg" alt="" class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Thông báo kết quả thi chuẩn Tiếng Anh đầu ra B1
+                                cho sinh viên ĐHCQ đợt 1 năm 2023</p>
+                        </a>
+                    </div>
+                    <div class="container__DaoTao-Right">
+                        <ul class="container__DaoTao-Right--List">
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Thông tin thời gian bảo vệ luận án tiến sĩ cấp
+                                    Trường của NCS Nguyễn Thế Toàn</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Thông tin thời gian bảo vệ luận án tiến sĩ cấp
+                                    Trường của NCS Tô Xuân Quỳnh</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Thông báo kết quả thi chuẩn Tiếng Anh đầu ra
+                                    B1 cho sinh viên ĐHCQ đợt 1 năm 2023</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Thông báo triển khai học Tiếng Anh tăng cường
+                                    học kỳ 2 năm học 2022 - 2023</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w1170">
+                    <a href=""><i class="fa-solid fa-angles-right"></i>Xem tất cả</a>
+                </div>
+            </div>
+
+            <div class="container__DaoTao container__DoiNgoai">
+                <div class="w1170">
+                    <p class="container__DaoTao-Title">ĐỐI NGOẠI</p>
+                </div>
+                <div class="w1170">
+                    <div class="container__DaoTao-Left">
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DoiNgoai_1.jpg" alt="" class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Buổi lễ ký kết Biên bản ghi nhớ hợp tác giữa
+                                Trường Đại học Thủy lợi và Tổng Hội xây dựng Việt Nam</p>
+                        </a>
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DoiNgoai_2.jpg" alt="" class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Buổi lễ ký kết Biên bản ghi nhớ giữa Trường Đại
+                                học Thủy lợi và Trường Đại học Pyeongtaek, Hàn Quốc.</p>
+                        </a>
+                        <a href="" class="container__DaoTao-Left--items">
+                            <img src="./img/Container/Info/DoiNgoai_3.jpg" alt="" class="container__DaoTao-Left--img">
+                            <p class="container__DaoTao-Left--content">Trường Đại học Thủy lợi tham dự Hội nghị triển
+                                khai Chiến lược phát triển khoa học công nghệ và đổi mới sáng tạo ngành nông nghiệp và
+                                PTNT đến 2030, tầm nhìn 2050</p>
+                        </a>
+                    </div>
+                    <div class="container__DaoTao-Right ">
+                        <ul class="container__DaoTao-Right--List">
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Tiếp và làm việc với Bí thư thứ nhất Đại sứ
+                                    quán Ấn Độ tại Việt Nam</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Trường Trung học quốc tế Pháp San Francisco
+                                    (Hoa Kỳ) tới thăm Trường Đại học Thủy lợi</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Trường Đại học Thủy lợi ký kết Biên bản ghi
+                                    nhớ với Công ty Union, Nhật Bản</li>
+                            </a>
+                            <a href="">
+                                <li class="container__DaoTao-Right--item">Chương trình kỷ niệm 50 năm thiết lập quan hệ
+                                    ngoại giao Việt Nam - Hà Lan</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w1170">
+                    <a href=""><i class="fa-solid fa-angles-right"></i>Xem tất cả</a>
+                </div>
+            </div>
+
+            <div class="container__NghienCuu_SuKien">
+                <div class="w1170">
+                    <div class="container__NghienCuu">
+                        <p class="container__NghienCuu-Title">NGHIÊN CỨU</p>
+                        <div class="container__NghienCuu-block">
+                            <a href="" class="container__NghienCuu-items">
+                                <img src="./img/Container/Info/NghienCuu_1.jpg" alt="" class="container__NghienCuu-img">
+                                <p class="container__NghienCuu-content">Quyết định thành lập hội đồng Giáo sư cơ sở
+                                    Trường Đại học Thủy lợi năm 2023</p>
+                            </a>
+                            <a href="" class="container__NghienCuu-items">
+                                <img src="./img/Container/Info/DoiNgoai_3.jpg" alt="" class="container__NghienCuu-img">
+                                <p class="container__NghienCuu-content">Trường Đại học Thủy lợi tham dự Hội nghị triển
+                                    khai Chiến lược phát triển khoa học công nghệ và đổi mới sáng tạo ngành nông nghiệp
+                                    và PTNT đến 2030, tầm nhìn 2050</p>
+                            </a>
+                            <a href="" class="container__NghienCuu-items">
+                                <img src="./img/Container/Info/NghienCuu_3.jpg" alt="" class="container__NghienCuu-img">
+                                <p class="container__NghienCuu-content">Quyết định giao đề tài cấp cơ sở năm 2023</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container__SuKien ">
+                        <p class="container__SuKien-Title">SỰ KIỆN</p>
+                        <div class="container__SuKien-block">
+                            <a href="" class="container__SuKien-items">
+                                <img src="./img/Container/Info/SuKien_NCKH.jpg" alt="" class="container__SuKien-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container__SinhVien">
+                <div class="w1170">
+                    <p class="container__SinhVien-Title">SINH VIÊN</p>
+                </div>
+                <div class="w1170">
+                    <div class="container__SinhVien-HienTai">
+                        <a href=""><img src="./img/Container/Info/SinhVien_HienTai.jpg" alt=""
+                                class="container__SinhVien-HienTai--img"></a>
+                        <ul class="container__SinhVien_List">
+                            <a href="">
+                                <li class="container__SinhVien-item">Nam sinh nhận học bổng toàn phần tại 4 nước Châu
+                                    Âu, tiết lộ ngành học lương lên tới vài nghìn đô</li>
+                            </a>
+                            <a href="">
+                                <li class="container__SinhVien-item">Phát huy vai trò của sinh viên trong tham gia trợ
+                                    giảng môn học </li>
+                            </a>
+                            <a href="">
+                                <li class="container__SinhVien-item">Những nữ sinh ngành Quản trị kinh doanh Trường Đại
+                                    học Thủy lợi đam mê Toán học</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="container__SinhVien-CuuSV">
+                        <a href=""> <img src="./img/Container/Info/SinhVien_CuuSV.jpg" alt=""
+                                class="container__SinhVien-CuuSV--img">
+                            <ul class="container__SinhVien_List">
+                        </a>
+                        <a href="">
+                            <li class="container__SinhVien-item">Cựu sinh viên lớp 36N, khoa Kỹ thuật Tài nguyên
+                                nước được bầu giữ chức vụ Chủ tịch UBND huyện Bạch Thông, tỉnh Bắc Kạn</li>
+                        </a>
+                        <a href="">
+                            <li class="container__SinhVien-item">“Khắc tinh” máy bay Mỹ
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="container__SinhVien-item">Cựu sinh viên Đại học Thủy lợi trồng dưa lưới công
+                                nghệ thông minh ở Hà Tĩnh
+                            </li>
+                        </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer__Top">
+                <div class="w1170">
+                    <div class="footer__Top-CopyRight">
+                        <p>© 2023 TRƯỜNG ĐẠI HỌC THỦY LỢI</p>
+                    </div>
+                    <div class="footer__Top-SocialNetWork">
+                        <a href=""><img src="" alt=""><img src="./img/Footer/fb-icon.png" alt=""
+                                class="footer__Top-SocialNetWork--img"></a>
+                        <a href=""><img src="" alt=""><img src="./img/Footer/ytb-icon.png" alt=""
+                                class="footer__Top-SocialNetWork--img"></a>
+                        <a href=""><img src="" alt=""><img src="./img/Footer/twitter-icon.png" alt=""
+                                class="footer__Top-SocialNetWork--img"></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__Bottom">
+                <div class="w1170">
+                    <a href=""><img src="./img/Footer/TLU-map.png" alt="" class="footer__Bottom-Map"></a>
+                    <div class="footer__Bottom-Info">
+                        <p>
+                            TRƯỜNG ĐẠI HỌC THỦY LỢI
+                        </p>
+                        <p>
+                            Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội <br>
+                            Điện thoại: (024) 38522201 - Fax: (024) 35633351 <br>
+                            Email: phonghcth@tlu.edu.vn
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="./js/TLU.js"></script>
+</body>
+
+</html>

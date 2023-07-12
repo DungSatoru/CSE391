@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file:///D:/Documents/63HTTT1/Semester%204/Web%20development%20platform/%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20Th%E1%BB%A7y%20l%E1%BB%A3i/css/bootstrap.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Login {
+            width: 300px;
+            margin: 200px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 5px #ccc;
+            border-radius: 5px;
+        }
+
+        #Account {
+            width: 94%;
+            height: 30px;
+            margin: 10px 0;
+            padding-left: 10px;
+            margin-right: -15px;
+        }
+
+        p {
+            color: red;
+            font-weight: 600;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            background-color: aliceblue;
+            border: none;
+            background-color: rgb(89, 129, 240);
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-message {
+            color: red;
+            background-color: rgb(233, 170, 170);
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" class="Login">
+        <div class="form-group">
+            <p class="AccountName">Account name</p>
+            <input type="text" name="account" id="Account" placeholder="Account name">
+            <div class="form-message"></div>
+        </div>
+        <button class="btn" type="submit">Save</button>
+    </form>
+
+    <script
+        src="./jquery-3.7.0.min.js"></script>
+    <script>
+        function checkAcc(e) {
+            const Acc = $(e);
+            const nameRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (Acc.val() === "") {
+                Acc.next(".form-message").text('This field is required.').show();
+                return false;
+            } else if (!nameRegex.test(Acc.val())) {
+                Acc.next(".form-message").text("Please enter the correct email format!\nExample: 'abc@gmail.com'").show();
+                return false;
+            }
+            Acc.next(".form-message").hide();
+            return true;
+        }
+
+        $(document).ready(function () {
+            $('#Account').on("input", function () {
+                const isUS = checkAcc("#Account");
+            });
+
+            $(".Login").submit((event) => {
+                event.preventDefault();
+                const isUS = checkAcc("#Account");
+                if (isUS) {
+                    $('#Account').val('');
+                    alert("Đăng nhập thành công");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

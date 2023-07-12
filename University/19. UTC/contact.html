@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../0_FileChung/CSS/Reset.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <style>
+        body {
+            background-color: rgb(47, 118, 242);
+        }
+
+        .app {
+            height: 100vh;
+        }
+        
+        .form {
+            width: 500px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .form > img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app d-flex justify-content-center align-items-center">
+        <form class="form">
+            <img src="./img/logoUTC.png" alt="">
+            <div class="form-group mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input id="Email" type="text" class="form-control" placeholder="Địa chỉ email">
+                </div>
+                <div class="form-message text-danger"></div>
+            </div>
+            <div class="form-group mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                    <input id="Password" type="text" class="form-control" placeholder="Nhập vào mật khẩu">
+                </div>
+                <div class="form-message text-danger"></div>
+            </div>
+            <div class="form-group">
+                <input id="maintain" type="checkbox">
+                <label for="maintain">Duy trì đăng nhập</label>
+            </div>
+            <button id="Login" class="my-3 w-100 py-2  border-0 rounded-2 bg-success text-light">Đăng nhập</button>
+        </form>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script>
+        function check(ID, Regex, message = '') {
+            if ($(ID).val() === "") {
+                $(ID).parent().next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (Regex !== '0') {
+                if (!Regex.test($(ID).val())) {
+                    $(ID).parent().next('.form-message').text(message).show();
+                    return false;
+                }
+            }
+            $(ID).parent().next(".form-message").hide(); 
+            return true;
+        }
+
+        $(document).ready(function () {
+            $('#Email').on('blur', () => { check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!\nExample: abc@gmail.com') })
+
+
+            $('#Login').click(function (e) {
+                e.preventDefault();
+                const isEmail = check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!');
+                const isPassWord = check ('#Password', '0', '')
+                if (isEmail && isPassWord) {
+                    alert('Bạn đã đăng ký thành công!');
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

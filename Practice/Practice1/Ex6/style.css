@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+    
+}
+
+#nav li a {
+    background-color: #000086;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    margin: 0;
+}
+
+#nav li a:hover {
+    background-color: #c00;        
+    border: 1px dashed #ccc;    
+}

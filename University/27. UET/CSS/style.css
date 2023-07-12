@@ -1,0 +1,90 @@
+*,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #253b80;
+    --secondary-color: #46a5e5;
+}
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#header {
+    background-color: var(--secondary-color);
+}
+.header__item {
+    border-left: 1px solid #ccc;
+}
+.header__item:last-child {
+    border-right: 1px solid #ccc;
+}
+.header__item a {
+    line-height: 40px;
+    color: #ddd;
+    font-size: 13px;
+}
+.header__item:hover a {
+    color: #fff;
+}
+#Nav {
+    background-color: var(--primary-color);
+}
+.Nav__item {
+    line-height: 80px;
+    padding: 0 18px;
+    border-left: 1px solid #99999928;
+}
+.Nav__item:first-child {
+    border-left: none;;
+
+}
+.Nav__item a {
+    color: #fff;
+}
+.Nav__item:hover a {
+    color: var(--secondary-color);
+}
+#Content {
+}
+#News {
+    background: url(../IMG/banner-tuyen-sinh-sdh-1.jpg);
+    background-size: 100%;
+    
+}
+.News {
+    width: 500px;
+    height: 550px;
+    background-color: #ffffff9e;
+    padding: 40px 30px 0 30px;
+}
+.News__list {
+    height: 80%;
+    overflow: hidden;
+}
+.News__item {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.News__item a:hover {
+    color: var(--secondary-color) !important;
+}
+.News__controls {
+    height: 20%;
+}
+.News__controls button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 2px #253b80;
+}
+#Ads {
+background-color: var(--secondary-color);
+}

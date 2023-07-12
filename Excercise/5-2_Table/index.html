@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hạ Quang Dũng</title>
+
+    <style>
+        
+        .table_info {
+            border: solid 1px #000;
+            margin-top: 20px;
+        }
+        
+        .submit {
+            margin: 0;
+        }
+        
+        
+        table , tr, td, th{
+            /* border-collapse: collapse; */
+            border: 1px solid #000;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="table">
+        <table class="table_info">
+            <tr>
+                <td>Họ tên</td> <td><input class = "inputName" type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td> <td><input class = "inputEmail" type="email"></td>
+            </tr>
+            <tr>
+                <td>Mã TP</td> <td><input class = "inputCity" type="text"></td>
+            </tr>
+            <tr>
+                <td>Thành phố</td>
+                <td>
+                    <select name="city" id="">
+                        <option value="HN">Hà Nội</option>
+                        <option value="DN">Đà Nẵng</option>
+                        <option value="HP">Hải Phòng</option>
+                        <option value="HY">Hưng Yên</option>
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="TT-H">Thừa Thiên - Huế</option>
+                        <option value="CT">Cần Thơ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button class="submit">Submit</button></td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+
+</html>

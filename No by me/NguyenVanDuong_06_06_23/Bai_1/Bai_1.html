@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập số 1</title>
+    <link rel="stylesheet" href="../">
+    <link rel="stylesheet" href="Bai_1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"> 
+                <form action="">
+                    <h4>NHẬP THÔNG TIN XE CỘ</h4>
+                    <div class="info">
+                        <div class="name_">Tên Xe <span style="color: red;">*</span>:</div> 
+                    <input id="name" type="text" name="" >
+
+                    <div class="name_">Hình Ảnh <span style="color: red;">*</span>:</div> 
+                    <input id="ima" type="text" name="" >
+
+                    <div class="name_">Hãng Xe <span style="color: red;">*</span>:</div> 
+                    <select name="" id="">
+                        <option value="" selected>-- Hãng xe --</option>
+                        <option value="">Toyota</option>
+                        <option value="">Mazda</option>
+                        <option value="">Mercedes</option>
+                    </select>
+
+                    <div class="name_">Giá Tiền <span style="color: red;">*</span>:</div> 
+                    <select size="3" aria-label="size 3 select example">
+                    </select>
+
+                    <div class="name_">Mô Tả</div> 
+                    <textarea name="" id="" cols="30" rows="6"></textarea>
+                    
+                    <div class="name_">Người liên hệ <span style="color: red;">*</span>:</div> 
+                    <input type="text" name="" id="person">
+                    
+                    <div class="name_">Số điện thoại người liên hệ <span style="color: red;">*</span>:</div>
+                    <input type="text" name="" id="phone">
+
+                    <div class="name_">Email <span style="color: red;">*</span>:</div>
+                    <select size="3" aria-label="size 3 select example">
+                    </select>
+                    
+                    <div class="input_button">
+                        <input id="submit_" onclick="checkloi()" style="background-color: green; color: white;" type="button" value="Lưu">
+                    <input style="background-color: orange; color: black;" type="button" value="Xóa">
+                    </div>
+                    </div>
+                    
+                
+
+                </form>
+    </div>
+
+    <div class="col-7">
+
+        <h4>QUẢN LÝ DANH SÁCH XE CỘ</h4>
+
+        <div class="input_text_ql">
+            <input type="text" placeholder="Tìm kiếm ...">
+        </div>
+
+        <table border="1">
+            <thead>
+                <th>STT</th>
+                <th>Hình Ảnh</th>
+                <th>Tên Xe</th>
+                <th>Hãng Xe</th>
+                <th>Giá Tiền</th>
+                <th>Người liên hệ</th>
+                <th>Điện thoại</th>
+                <th>Email</th>
+            </thead>
+
+            <!-- <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody> -->
+        </table>
+    </div>
+        </div>
+        
+    </div>
+    
+    <script src="Bai_1.js"></script>
+</body>
+</html>

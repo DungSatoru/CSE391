@@ -1,0 +1,69 @@
+#header {
+	background: url("../img/header-bg.png") no-repeat center / cover;
+}
+.header__wrapped {
+}
+.header__left img {
+	width: 300px;
+	object-fit: cover;
+}
+.header__right img {
+	width: 40px;
+	object-fit: contain;
+}
+
+.nav__list li a {
+	transition: all 0.1s linear;
+}
+
+.nav__list li:hover a {
+	background-color: #fff;
+	color: #005ca1 !important;
+}
+.nav__icon {
+	width: 24px;
+	height: 24px;
+	color: #e3763e;
+}
+
+.nav__icon:hover {
+	opacity: 0.8;
+}
+
+#section {
+	background-color: #b2c1bc;
+}
+
+.section__left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section__item {
+	background-color: #005ca1;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.section__item:hover {
+	opacity: 1;
+}
+
+.section__item i {
+}
+
+.section__right {
+	overflow-y: auto;
+	height: 500px;
+	scroll-behavior: auto;
+}
+
+.section__right::-webkit-scrollbar {
+	width: 5px;
+	background-color: #fff;
+}
+.section__right::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 10px;
+}

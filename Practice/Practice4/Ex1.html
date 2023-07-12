@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+
+<body>
+    <h1 id="heading">Hello</h1>
+    <button id="changeBtn">Thay đổi</button>
+
+
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script>
+        document.querySelector('button').onclick = () => {
+            const input = prompt("Nhập vào một chuỗi ký tự:");
+            if (input !== "") {
+                document.querySelector("h1").innerText = input;
+            }
+        }
+            
+
+        // Lắng nghe sự kiện click trên nút nhấn
+        // document.getElementById("changeBtn").addEventListener("click", function () {
+        //     // Yêu cầu người dùng nhập vào một chuỗi ký tự
+        //     var newString = prompt("Nhập vào một chuỗi ký tự:");
+        //     // Kiểm tra nếu chuỗi nhập vào không rỗng
+        //     if (newString !== null && newString !== "") {
+        //         // Thay đổi nội dung trong thẻ H1 bằng chuỗi nhập vào
+        //         document.getElementById("heading").textContent = newString;
+        //     }
+        // });
+
+        // Dùng bằng jQuery
+        // jQuery(Document).ready(function () {
+        //     $('#changeBtn').click(() => {
+        //         var newString = prompt("Nhập vào một chuỗi ký tự:");
+        //         if (newString !== null && newString !== "") {
+        //             // Thay đổi nội dung trong thẻ H1 bằng chuỗi nhập vào
+        //             $("#heading").text(newString);
+        //         }
+        //     })
+        // });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #login {
+            margin-top: 100px;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input {
+            height: 30px;
+            padding: 0 0 0 10px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .Check_No-robot {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .content1 {
+            padding-left: 10px;
+        }
+
+        .content1 input[type="checkbox"] {
+            height: 20px;
+            width: 20px;
+        }
+
+        .content2 img {
+            width: 30px;
+        }
+
+        .content2 a {
+            font-size: 10px;
+        }
+
+        button {
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 3px 10px;
+            border-radius: 5px;
+            background-color: rgb(48, 48, 205);
+            color: #fff;
+        }
+
+        .Title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Map-img {
+            width: 100%;
+        }
+
+        .form-message {
+            color: red;
+            background-color: rgb(249, 213, 213);
+            font-style: italic;
+            margin: 2px 0 0 0;
+            font-size: 10px;
+            padding: 0 10px;
+            width: fit-content;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <p class="Title">Thông tin liên hệ</p>
+                    <form action="" class="form">
+                        <div class="form-group">
+                            <p>Họ và tên</p>
+                            <input placeholder="Họ và tên" type="text" name="" id="Name">
+                            <div class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <input placeholder="Email" type="text" name="" id="Email">
+                            <div class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <p>Nội dung</p>
+                            <textarea name="" id="Content" cols="30" rows="10"></textarea>
+                            <div class="form-message"></div>
+                        </div>
+                        <div class="Check_No-robot d-flex gap-1 align-items-center justify-content-between">
+                            <div class="content1 d-flex gap-2">
+                                <input type="checkbox" name="" id="NotRobot">
+                                <span>Tôi không phải là người máy</span>
+                            </div>
+                            <div class="content2 d-flex align-items-center flex-column pe-4">
+                                <img src="./IMG/logo_48.png" alt="">
+                                <span>reCAPTCHA</span>
+                                <a class="text-decoration-none" href="#">Bảo mật-Điều khoản</a>
+                            </div>
+                        </div>
+                        <button id="submit">Gửi</button>
+                    </form>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <p class="Title">Bản đồ</p>
+                    <img class="Map-img" src="./IMG/Map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script>
+        function check(ID, Regex, message = '') {
+            if ($(ID).val() === "") {
+                $(ID).next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (Regex !== '0') {
+                if (!Regex.test($(ID).val())) {
+                    $(ID).next('.form-message').text(message).show();
+                    return false;
+                }
+            }
+            $(ID).next(".form-message").hide();
+            return true;
+        }
+
+        function reset() {
+            $('#Name').val('');
+            $('#Email').val('');
+            $('#Content').val('');
+            $(".form-message").hide();
+
+        }
+
+        $(document).ready(function () {
+            $('#Title').on('input', () => { check('#Title', '0', '') })
+            $('#Name').on('input', () => { check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ') })
+            $('#Email').on('input', () => { check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!\nExample: abc@gmail.com') })
+            $('#Content').on('input', () => { check('#Content', '0', '') })
+
+
+            $('#submit').click(function (e) {
+                e.preventDefault();
+                const isName = check('#Name', /^[\p{L}\s]+$/u, 'Tên chỉ có ký tự chữ');
+                const isEmail = check('#Email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Vui lòng nhập đúng định dạng email!');
+                const isContent =  check('#Content', '0', '');
+                const isNotRobot = $('#NotRobot').is(':checked');
+
+                if (isName && isEmail && isContent && isNotRobot) {
+                    reset();
+                    alert('Bạn đã đăng ký thành công!')
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

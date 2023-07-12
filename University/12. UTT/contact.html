@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../0_FileChung/FontAwesome/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .app {
+            width: 450px;
+            box-shadow: 5px 5px 20px 5px #ccc;
+            margin: 100px auto;
+            border-radius: 10px !important;
+            overflow: hidden;
+            padding-bottom: 40px;
+        }
+
+        .brand {
+            text-align: center;
+            margin: auto;
+            background: linear-gradient(to right, #012441, #22547d);
+            padding: 10px 0;
+        }
+        form {
+            padding: 20px;
+        }
+        .ip-group {
+            background-color: #e9eef2;
+            color: #999;
+            border-radius: 20px;
+        }
+        .ip-group i {
+            align-self: center;padding: 0 20px;
+        }
+        .ip-group input {
+            height: 35px;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+        .text-Info {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 g-0">
+                    <div class="brand">
+                        <img src="./assets/img/logo-utt-login.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <form action="">
+                        <p class="form__title fw-bold text-center text-uppercase fs-5 mt-4">Đăng nhập hệ thống</p>
+                        <div class="form-group mb-4">
+                            <div class="ip-group d-flex">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" class="" placeholder="Địa chỉ email">
+                            </div>
+                            <div class="form-message"></div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="ip-group d-flex">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="text" class="" placeholder="Mật khẩu">
+                                <i style="cursor: pointer;" class="fa-solid fa-eye-slash"></i>
+                            </div>
+                            <div class="form-message"></div>
+                        </div>
+                        <button style="background-color: #fd8a39;" id="Submit" class="w-100 rounded-5 py-2 border-0 text-white fw-bold text-uppercase">Đăng nhập</button>
+                        <p class="mt-1 text-Info text-center">* Dùng tài khoản trên <a class="text-decoration-none" href="#">cổng thông tin giảng viên</a> để đăng nhập!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

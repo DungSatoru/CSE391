@@ -1,0 +1,86 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+.Information {
+
+}
+
+.Info-Left,
+.Info-Center,
+.Info-Right {
+    display: flex;
+}
+
+.Information-icon {
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.Info-Hotline,
+.Info-Address {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 38px;
+    margin-left: 10px;
+}
+
+
+
+.Info-Left > i,
+.Info-Center > i {
+    margin-left: 30px;
+}
+
+.Info-Right {
+    justify-content: space-around;
+}
+
+#Navigation {
+    background-color: #9E1D1D;
+    width: 100%;
+    height: 70px;
+}
+
+
+.img-brand {
+    height: 45px;
+    margin: 12px 0 0 30px;
+}
+
+.Nav-List {
+    list-style-type: none;
+}
+
+.Nav-item {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Nav-item:not(:last-child) a {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+.btn-TuVan {
+    background-color: #fff !important;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Slider {
+    margin-top: 10px;
+}
+
+#Slider a img {
+    width: 100%;
+}

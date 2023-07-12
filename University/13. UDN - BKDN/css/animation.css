@@ -1,0 +1,19 @@
+@keyframes ZoomIn {
+    0% {
+        /* Trạng thái ban đầu */
+        opacity: 0;
+        top: 0;
+    }
+
+    50% {
+        /* Trạng thái ở giữa */
+        opacity: 0.5;
+        top: 50%;
+    }
+
+    100% {
+        /* Trạng thái kết thúc */
+        opacity: 1;
+        top: 100%;
+    }
+}

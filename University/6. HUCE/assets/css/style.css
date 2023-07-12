@@ -1,0 +1,90 @@
+html {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#header {
+	background-color: #002a5c;
+	height: 100px;
+}
+
+.header__left-img {
+	width: 80px;
+	object-fit: cover;
+}
+.header__left-vn {
+	display: block;
+	font-weight: 600;
+	font-size: 19px;
+}
+.header__left-en {
+	display: block;
+	font-weight: 600;
+	font-size: 20px;
+}
+.header__list li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.header__item {
+	display: inline-block;
+}
+
+#nav {
+	background-color: #001e42;
+}
+
+.nav__list li {
+	display: inline-block;
+}
+.nav__list li a {
+	display: inline-block;
+	font-size: 20px;
+	padding: 12px 38px;
+	position: relative;
+}
+
+.nav__list li a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+	width: 1px;
+	height: 4px;
+	transition: width 0.5s linear;
+}
+
+.nav__list li:hover a::before {
+	width: 100%;
+	background-color: #a30713;
+}
+
+.nav__list li:first-child a {
+	padding-left: 0;
+}
+.nav__list li:last-child a {
+	padding-right: 0;
+}
+
+.slider__link img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section__item {
+	height: 100px;
+}
+.section__item-img {
+	height: 30px;
+}
+.section__item-title {
+	max-width: 120px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.section__item:hover .section__item-title {
+	color: #a30713 !important;
+}

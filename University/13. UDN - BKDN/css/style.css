@@ -1,0 +1,200 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.headerTop {
+    background-color: #0a67af;
+}
+
+.headerTop__left {}
+
+.headerTop__right {}
+
+
+.headerTop__right-list,
+.headerTop__left-list {
+    height: 40px;
+}
+
+.headerTop__right-item:hover,
+.headerTop__left-item:hover {
+    opacity: 0.8;
+}
+
+.headerTop__left-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.headerTop__left-item a,
+.headerTop__right-item a {
+    color: #fff;
+
+}
+
+
+.headerTop__right-item:not(:last-child) {
+    background-color: #0a5a99;
+    width: 88px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+
+
+
+.headerTop__right-item img {
+    width: 30px;
+    margin: 0 10px 0 0;
+}
+
+.headerBottom {
+    height: 90px;
+}
+
+.headerBottom__Brand {
+    height: 90px;
+}
+
+.headerBottom__Brand img {
+    width: 380px;
+}
+
+.headerBottom__search {
+    height: 50%;
+}
+
+.headerBottom__search>div {
+    width: fit-content;
+    border: 1px solid #ccc;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.headerBottom__search input {
+    outline: none;
+}
+
+.headerBottom__search input,
+.headerBottom__search i {
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    color: #777;
+}
+
+.headerBottom__nav {
+    height: 50%;
+}
+
+.headerBottom__nav-list {
+    height: 100%;
+}
+
+.headerBottom__nav-item {
+    position: relative;
+    padding: 12px 0;
+}
+
+.headerBottom__nav-item:hover {
+    border-bottom: 4px solid #0a5a99;
+}
+
+.headerBottom__nav-item>a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+.headerBottom__subnav-list {
+    z-index: 10;
+    display: none;
+    width: max-content;
+    position: absolute;
+    background-color: white;
+    margin: 18px 0;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.headerBottom__subnav-item {
+    padding: 10px 20px;
+
+}
+
+.headerBottom__subnav-item a {
+    color: #000;
+    font-weight: 600
+}
+
+.headerBottom__subnav-item:hover a {
+    color: #0a67af;
+}
+
+.headerBottom__subnav-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.headerBottom__nav-list--GioiThieu:hover .headerBottom__subnav-list--GioiThieu,
+.headerBottom__nav-list--TuyenSinh:hover .headerBottom__subnav-list--TuyenSinh,
+.headerBottom__nav-list--DaoTao:hover .headerBottom__subnav-list--DaoTao,
+.headerBottom__nav-list--NghienCuu:hover .headerBottom__subnav-list--NghienCuu,
+.headerBottom__nav-list--HopTac:hover .headerBottom__subnav-list--HopTac,
+.headerBottom__nav-list--SinhVien:hover .headerBottom__subnav-list--SinhVien,
+.headerBottom__nav-list--HoTro:hover .headerBottom__subnav-list--HoTro {
+    display: block;
+}
+
+/* SLIDER */
+#slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+.slider__menu {
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+}
+
+.slider__menu-item {
+    background-color: #0a5a99;
+    width: 19.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__menu-item:hover {
+    background-color: #0a67af;
+}
+
+.slider__menu-item img {
+    height: 30px;
+}
+
+
+.slider__menu-item a {
+    line-height: 46px;
+    margin: 0 0 0 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

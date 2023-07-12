@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../0_FileChung/CSS/bootstrap.min.css">
+    <style>
+        .Title {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .form-group input,
+        textarea {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 0 0 10px;
+            height: 30px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #002147;
+        }
+        button:hover {
+            background-color: rgb(188, 0, 0);
+        }
+        .form-message {
+            text-align: left;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 style="color: #002147;" class="Title text-uppercase text-center">Liên hệ chính</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <p style="color: #002147" class="fs-3 fw-bold">Phòng Đào tạo</p>
+                    <p>
+                        Tầng 1 Nhà E - Phòng E103 <br><br>
+                        Thời gian: 8:00am-5:00pm <br>
+                        ĐT: 024.8362672 <br>
+                        Hòm thư: dt@epu.edu.vn
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p style="color: #002147" class="fs-3 fw-bold">Phòng công tác HS-SV</p>
+                    <p>
+                        Tầng 1 Nhà E - Phòng E102<br> <br>
+                        Thời gian: 8:00am-5:00pm<br>
+                        ĐT: 024.22185709 - 024.22185719<br>
+                        Hòm thư: cthssv@epu.edu.vn
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p style="color: #002147" class="fs-3 fw-bold">Trung tâm HT-QT</p>
+                    <p>
+                        Tầng 4 Nhà B - Phòng B401<br> <br>
+                        Thời gian: 8:00am-5:00pm<br>
+                        ĐT: 024.22.186.100<br>
+                        Hòm thư: cict@epu.edu.vn
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p style="color: #002147" class="fs-3 fw-bold">Phòng HC-QT</p>
+                    <p>
+                        Tầng 1 Nhà B - Phòng B101br<br><br>
+                        Thời gian: 8:00am-5:00pmbr<br>
+                        ĐT: 024.22185629br<br>
+                        Hòm thư: hc@epu.edu.vn
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="Title">Liên hệ</h3>
+                    <form action="" class="form text-center">
+                        <div class="form-group w-100 mb-2">
+                            <input class="w-100" type="text" id="FirstName" placeholder="Xin mời nhập họ">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group w-100 mb-2">
+                            <input class="w-100" type="text" id="LastName" placeholder="Xin mời nhập tên">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group w-100 mb-2">
+                            <input class="w-100" type="text" id="Email" placeholder="Xin mời nhập hòm thư">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group w-100 mb-2">
+                            <input class="w-100" type="text" id="Phone" placeholder="Xin mời nhập số điện thoại">
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <div class="form-group w-100 mb-2">
+                            <textarea class="w-100" type="text" id="Content" placeholder="Xin mời nhập lời nhắn"></textarea>
+                            <div class="form-message text-danger"></div>
+                        </div>
+                        <button id="Submit" class="border-0 py-2 w-50 rounded-1 text-white text-uppercase fw-bold mt-3 mb-5">Gửi</button>
+                    </form>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../0_FileChung/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
+</body>
+
+</html>

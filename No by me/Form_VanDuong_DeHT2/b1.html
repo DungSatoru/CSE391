@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b1.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Đăng ký</h1>
+            <p class="p1">Miễn phí và sẽ luôn như vậy.</p>
+
+            <div class="box">
+                <input id="ho_" class="ho" type="text" placeholder="Họ">
+                <input id="ten_" class="name" type="text" placeholder="Tên">
+                <p id="check_ten"></p>
+            </div>
+
+            <input id="email_" type="text" placeholder="Email hoặc số di động"> <p id="check_email"></p>
+            <input type="text" placeholder="Nhập lại email">
+            <input type="text" placeholder="Mật khẩu mới">
+
+            <label>
+                <p>Ngày sinh</p>
+                <div class="box2">
+                    <div class="box2_1">
+                        <select name="" id="">
+                        <option value="1">Ngày</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="1">Tháng</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="1">Năm</option>
+                    </select>
+                    </div>
+                    
+                    <div class="box2_2">
+                        <a href="">Tại sao tôi cần cung cấp ngày sinh của mình?</a>
+                    </div>
+                    
+                </div>
+            </label>
+
+            <div class="box3">
+                <label><input type="radio">Nữ</label>
+                <label><input type="radio">Nam</label>
+            </div>
+
+            <p class="p2">Bằng cách nhấp vào Đăng ký, ban đồng ý với <a href="">Các điều khoản</a> của chúng tôi và rằng bạn đã đọc <a href="">Chính sách dữ liệu</a> của chúng tôi, bao gồm <a href="">Sử dụng cooke</a>.</p>
+
+            <input class="dangky" onclick="checkloi()" type="button" value="Đăng ký">
+        </form>
+    </div>
+
+    <script src="b1.js"></script>
+</body>
+</html>

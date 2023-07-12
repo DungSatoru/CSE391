@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập số 2</title>
+    <style>
+        .Info {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .checked {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="checked">
+        <div>
+            <input id="rbRed" type="radio" value="" name="color">
+            <label for="">Đỏ</label>
+        </div>
+        <div>
+            <input id="rbBlue" type="radio" value="" name="color">
+            <label for="">Xanh da trời</label>
+        </div>
+        <div>
+            <input id="rbGreen" type="radio" value="" name="color">
+            <label for="">Xanh lá cây</label>
+        </div>
+    </div>
+    <div class="Info"></div>
+
+
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script >
+        jQuery(Document).ready(function () {
+            $('#rbGreen').click(() => {
+                $('.Info').css('background-color', 'green').text(`Đây là màu xanh`).show();
+            })
+            $('#rbRed').click(() => {
+                $('.Info').css('background-color', 'red').text(`Đây là màu đỏ`).show();
+            })
+            $('#rbBlue').click(() => {
+                $('.Info').css('background-color', 'blue').text(`Đây là màu Xanh da trời`).show();
+            })
+        });
+                
+    </script>
+</body>
+</html>

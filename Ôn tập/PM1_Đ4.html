@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 4</title>
+    <link rel="stylesheet" href="./0_FileChung/Reset.css">
+    <link rel="stylesheet" href="./0_FileChung/all.min.css">
+    <link rel="stylesheet" href="./0_FileChung/bootstrap.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #333;
+        }
+
+        .app {
+            width: 700px;
+            margin: 20px auto 0;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 3px;
+            box-shadow: 5px 5px 5px #ccc;
+        }
+
+        img {
+            width: 20px;
+        }
+
+        p,
+        h1 {
+            color: rgb(0, 149, 255);
+        }
+
+        .form {
+            width: 100%;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact .form-group {
+            width: 47%;
+        }
+
+        span {
+            color: rgb(181, 118, 3);
+        }
+
+        .btn {
+            background-color: blue;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+        }
+        textarea {
+            height: 100px;
+        }
+
+        .form-message {
+            color: red;
+            background-color: rgb(235, 171, 171);
+            font-style: italic;
+            margin: 5px 0 10px 0;
+            width: fit-content;
+            font-size: 12px;
+            border-radius: 10px;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+        <h1 class="title">LIÊN HỆ - GÓP Ý</h1>
+        <p><img src="./QuocKyVN.png" alt="">Đây là kênh thông tin tiếp nhận những góp ý, thắc mắc của tất cả phụ huynh,
+            sinh viên, giảng viên, cán bộ nhân viên và những ai quan tâm gửi ý kiến đóng góp cho Nhà trường. Các câu
+            hỏi, góp ý sẽ hoàn toàn được giữ bí mật và được Hội Đồng Quản Trị, Ban Giám Hiệu, các trưởng bộ phận trả lời
+            sớm nhất. Chân thành cảm ơn bạn đã có những ý kiến đóng góp xây dựng và phát triển trường.</p>
+        <p><img src="./QuocKyVN.png" alt="">Chú ý: Để nhận được câu trả lời của Nhà trường xin vui lòng nhập địa chỉ
+            email chính xác</p>
+        <form action="" class="form">
+            <div class="form-group">
+                <span>Họ tên bạn:</span>
+                <input type="text" name="" id="Name">
+                <div class="form-message"></div>
+            </div>
+            <div class="contact">
+                <div class="form-group">
+                    <span>Điện thoại:</span>
+                    <input type="text" name="" id="Phone">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <span>Email:</span>
+                    <input type="text" name="" id="Email">
+                    <div class="form-message"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <span>Về việc:</span>
+                <select name="" id="">
+                    <option value="">Góp ý với lãnh đạo nhà trường</option>
+                    <option value="">Góp ý với Ban giám hiệu</option>
+                    <option value="">Góp ý với bộ phận trong trường</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span>Tiêu đề:</span>
+                <input type="text" name="" id="Title">
+                <div class="form-message"></div>
+            </div>
+            <div class="form-group">
+                <span>Nội dung:</span>
+                <textarea name="" id="Content" cols="30" rows="10"></textarea>
+                <div class="form-message"></div>
+            </div>
+            <button id="send" class="btn" type="submit">Gởi đi</button>
+        </form>
+    </div>
+
+    <script src="./0_FileChung/jquery-3.7.0.min.js"></script>
+    <script>
+        function checkName(e) {
+            var Name = $(e);
+            var nameRegex = /^[\p{L}\s]+$/u;
+            if (Name.val().trim() === "") {
+                Name.next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (!nameRegex.test(Name.val())) {
+                Name.next('.form-message').text('Tên chỉ được chứa ký tự').show();
+                return false;
+            }
+            Name.next(".form-message").hide();
+            return true;
+        }
+
+        function checkPhone(e) {
+            var Phone = $(e);
+            var PhoneRegex = /^0[1-9]\d{8,10}$/;
+
+            if (Phone.val().trim() === "") {
+                Phone.next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            }
+            if (!PhoneRegex.test(Phone.val())) {
+                Phone.next('.form-message').text('Số điện thoại không hợp lệ').show();
+                return false;
+            } else if (Phone.val().length < 10 || Phone.val().length > 12) {
+                Phone.next('.form-message').text('Số điện thoại từ 10 đến 12 số').show();
+                return false;
+            }
+            Phone.next(".form-message").hide();
+            return true;
+        }
+
+        function checkEmail(e) {
+            var Email = $(e);
+            var EmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (Email.val().trim() === "") {
+                Email.next('.form-message').text('Vui lòng nhập trường này').show();
+                return false;
+            } else if (!EmailRegex.test(Email.val())) {
+                Email.next('.form-message').text('Email không hợp lệ').show();
+                return false;
+            }
+            Email.next(".form-message").hide();
+            return true;
+        }
+
+        function checkNull(e, message) {
+            if ($(e).val() === '') {
+                $(e).next('.form-message').text(message).show();
+                return false;
+            }
+            $(e).next('.form-message').text('').hide();
+            return true;
+        }
+
+        $(document).ready(function () {
+            $('#Name').on("input", () => { checkName("#Name") });
+            $('#Phone').on("input", () => { checkPhone("#Phone") });
+            $('#Email').on("input", () => { checkEmail("#Email") });
+            $('#Title').on("input", () => { checkNull('#Title', 'Vui lòng nhập tiêu đề') });
+            $('#Content').on("input", () => { checkNull('#Content', 'Vui lòng nhập nội dung') });
+
+            $("#send").click(function (e) {
+                e.preventDefault();
+                const isName = checkName("#Name");
+                const isPhone = checkPhone("#Phone");
+                const isEmail = checkEmail("#Email");
+                const isTitle = checkNull('#Title', 'Vui lòng nhập tiêu đề');
+                const isContent = checkNull('#Content', 'Vui lòng nhập nội dung');
+
+                if (isName && isPhone && isEmail && isTitle && isContent) {
+                    $('#Name').val('');
+                    $('#Phone').val('');
+                    $('#Email').val('');
+                    $('#Title').val('');
+                    $('#Content').val('');
+                    e.submit();
+                    alert("Bạn đã đăng ký thành công");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

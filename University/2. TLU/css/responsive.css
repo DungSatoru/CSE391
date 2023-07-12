@@ -1,0 +1,244 @@
+.active {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.hiden {
+    display: none;
+}
+
+/* Chung của PC và tablet */
+@media (min-width: 940px) {
+
+    #header2_nav {
+        display: flex !important;
+    }
+
+    .header2_nav-GioiThieu:hover .header2_nav-GioiThieu--submenu,
+    .header2_nav-TTTB:hover .header2_nav-TTTB--submenu,
+    .header2_nav-TuyenSinh:hover .header2_nav-TuyenSinh--submenu,
+    .header2_nav-DaoTao:hover .header2_nav-DaoTao--submenu,
+    .header2_nav-NghienCuu:hover .header2_nav-NghienCuu--submenu,
+    .header2_nav-DoiNgoai:hover .header2_nav-DoiNgoai--submenu,
+    .header2_nav-SinhVien:hover .header2_nav-SinhVien--submenu {
+        display: block;
+    }
+
+    
+    
+
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+
+    .header__brand,
+    .header2_1,
+    .container__navbar,
+    .container__Info,
+    .container__TuyenSinh .w1170,
+    .container__DaoTao .w1170,
+    .container__NghienCuu_SuKien .w1170,
+    .container__SinhVien .w1170,
+    .footer__Top .w1170,
+    .footer__Bottom .w1170 {
+        width: 940px;
+    }
+
+
+
+
+
+}
+
+
+/* TABLET */
+@media (max-width: 940px) {
+
+    .header__brand,
+    .header2_1,
+    .container__navbar,
+    .container__Info,
+    .container__TuyenSinh .w1170,
+    .container__DaoTao .w1170,
+    .container__NghienCuu_SuKien .w1170,
+    .container__SinhVien .w1170,
+    .footer__Top .w1170,
+    .footer__Bottom .w1170 {
+        width: 90%;
+    }
+
+    .header2_nav {
+        flex-direction: column;
+        background-color: #4896d1;
+        display: none;
+    }
+
+
+
+    .header2_1-Bar {
+        display: flex;
+    }
+
+
+    .header__brand-right--search {
+        display: none;
+    }
+
+    .header2_nav>li {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .header2_nav :not(:first-child)>a {
+        border-left: none;
+        margin: 0;
+    }
+
+
+    .header2_nav-subnav>i {
+        display: inline-block;
+        float: right;
+        line-height: 46px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .header2_nav-subnav>.fa-chevron-up {
+        display: none;
+    }
+
+    .container__Info-Show {
+        width: 60%;
+    }
+
+    .container__Info-Category {
+        width: 38%;
+    }
+
+    .container__Info-Department {
+        width: 100%;
+    }
+
+    .container__DaoTao-Left,
+    .container__DaoTao-Right {
+        width: 100%;
+    }
+
+    .container__navbar-items>div {
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+    }
+
+    .container__navbar-item {
+        margin: 10px 0 0 0;
+        width: 20%;
+        text-align: center;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 570px) {
+
+    .header__brand,
+    .header2_1,
+    .container__navbar,
+    .container__Info,
+    .container__TuyenSinh .w1170,
+    .container__DaoTao .w1170,
+    .container__NghienCuu_SuKien .w1170,
+    .container__SinhVien .w1170,
+    .footer__Top .w1170,
+    .footer__Bottom .w1170 {
+        width: 100%;
+    }
+
+    .header__brand-img {
+        width: 100%;
+    }
+
+    .container__Info-Show {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container__Info-Category,
+    .container__Info-Department {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+
+
+    .container__TuyenSinh .w1170 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .container__TuyenSinh .w1170 a {
+        display: block;
+        height: 100%;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .container__DaoTao-Left,
+    .container__DaoTao-Right {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container__DaoTao-Left--items {
+        width: 100%;
+    }
+
+    .container__NghienCuu,
+    .container__SuKien {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container__NghienCuu-items {
+        width: 100%;
+    }
+
+
+    .container__SinhVien-HienTai,
+    .container__SinhVien-CuuSV {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer__Top {
+        background-color: #004eaf;
+        height: fit-content;
+    }
+
+    .footer__Top-CopyRight p {
+        font-size: 14px;
+        color: #fff;
+        margin: 0 20px;
+        line-height: 60px;
+    }
+
+    .footer__Top-SocialNetWork--img {
+        width: 30px;
+    }
+
+    .footer__Bottom-Map {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .footer__Bottom-Info {
+        margin: 20px 0 0 30px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+}
